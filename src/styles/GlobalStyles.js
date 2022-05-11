@@ -14,7 +14,6 @@ const GlobalStyles = createGlobalStyle`
           --white: #ffffff;
           
   }
-test
   .wrapper {
     /* max-width: 960px; */
   }
