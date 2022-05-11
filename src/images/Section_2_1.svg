@@ -1,0 +1,60 @@
+<svg width="926" height="392" viewBox="0 0 926 392" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Section_2_1" clip-path="url(#clip0_128_854)">
+<g id="Group">
+<path id="Vector" d="M800 245H0V294H800V245Z" fill="#BD111F"/>
+<path id="Vector_2" d="M800 329H0V378H800V329Z" fill="#BD111F"/>
+<path id="Vector_3" d="M800 266H0V273H800V266Z" fill="white"/>
+<path id="Vector_4" d="M800 280H0V287H800V280Z" fill="white"/>
+<path id="Vector_5" d="M800 350H0V357H800V350Z" fill="white"/>
+<path id="Vector_6" d="M800 364H0V371H800V364Z" fill="white"/>
+<path id="Vector_7" d="M912 175H800V378H912V175Z" fill="#BD111F"/>
+<g id="Group_2">
+<path id="Vector_8" d="M835 35H695V175H835V35Z" fill="#F8C4B6"/>
+<path id="Vector_9" d="M702 119H674V147H702V119Z" fill="#F8C4B6"/>
+<path id="Vector_10" d="M863 119H835V147H863V119Z" fill="#F8C4B6"/>
+</g>
+<path id="Vector_11" d="M877 175H0V189H877V175Z" fill="#BD111F"/>
+<path id="Vector_12" d="M905 168H835V175H905V168Z" fill="#BD111F"/>
+<path id="Vector_13" d="M898 161H835V168H898V161Z" fill="#BD111F"/>
+<path id="Vector_14" d="M891 154H835V161H891V154Z" fill="#BD111F"/>
+<path id="Vector_15" d="M884 147H835V154H884V147Z" fill="#BD111F"/>
+<path id="Vector_16" d="M807 161H723V168H807V161Z" fill="white"/>
+<path id="Vector_17" d="M716 140H709V147H716V140Z" fill="#738928"/>
+<path id="Vector_18" d="M821 140H814V147H821V140Z" fill="#738928"/>
+<g id="Group_3">
+<path id="Vector_19" d="M877 364H856V385H877V364Z" fill="#738928"/>
+<path id="Vector_20" d="M898 343H877V364H898V343Z" fill="#738928"/>
+<path id="Vector_21" d="M919 364H898V385H919V364Z" fill="#738928"/>
+<path id="Vector_22" d="M877 322H856V343H877V322Z" fill="#738928"/>
+<path id="Vector_23" d="M919 322H898V343H919V322Z" fill="#738928"/>
+<path id="Vector_24" d="M877 343H856V364H877V343Z" fill="white"/>
+<path id="Vector_25" d="M919 343H898V364H919V343Z" fill="white"/>
+<path id="Vector_26" d="M898 322H877V343H898V322Z" fill="white"/>
+<path id="Vector_27" d="M898 364H877V385H898V364Z" fill="white"/>
+<path id="Vector_28" d="M856 343H849V364H856V343Z" fill="#738928"/>
+<path id="Vector_29" d="M926 343H919V364H926V343Z" fill="#738928"/>
+<path id="Vector_30" d="M877 385V392H898V385H877Z" fill="#738928"/>
+<path id="Vector_31" d="M877 315V322H898V315H877Z" fill="#738928"/>
+</g>
+</g>
+<g id="Group_4">
+<path id="Vector_32" d="M807 56H835V35H807V56Z" fill="#BD111F"/>
+<path id="Vector_33" d="M709 35L821 35V14L709 14V35Z" fill="#BD111F"/>
+<path id="Vector_34" d="M821 105H842V56H821V105Z" fill="#BD111F"/>
+<path id="Vector_35" d="M835 119H842V105H835V119Z" fill="#BD111F"/>
+<path id="Vector_36" d="M723 35H695V56H723V35Z" fill="#BD111F"/>
+<path id="Vector_37" d="M709 56H688V105H709V56Z" fill="#BD111F"/>
+<path id="Vector_38" d="M695 105H688V119H695V105Z" fill="#BD111F"/>
+<path id="Vector_39" d="M814 42L870 42V0L814 0V42Z" fill="#BD111F"/>
+<path id="Vector_40" d="M856 42H884V7H856V42Z" fill="#BD111F"/>
+<path id="Vector_41" d="M863 77H884V42H863V77Z" fill="#BD111F"/>
+<path id="Vector_42" d="M870 91H884V70H870V91Z" fill="#BD111F"/>
+<path id="Vector_43" d="M870 70H891V21H870V70Z" fill="#BD111F"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_128_854">
+<rect width="926" height="392" fill="white"/>
+</clipPath>
+</defs>
+</svg>
