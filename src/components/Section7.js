@@ -11,7 +11,6 @@ const Section7Style = styled.div`
   background-color: var(--red);
   padding: 100px 70px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
 
   .section7-content {
     padding-bottom: 100px;
@@ -42,7 +41,7 @@ const Section7SvgStyle = styled(Section7Svg)`
 export default function Section7() {
   return (
     <Section7Style>
-      <div className="section7-content">
+      <div className="section7-content wrapper">
         <p>
           Kopš 2013. gada esam piedzīvojuši daudz burvīgu mirkļu. Jo mums ir
           lieliski draugi un sadarbības partneri.

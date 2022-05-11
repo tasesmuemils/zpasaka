@@ -20,13 +20,10 @@ const WorkHoursStyle = styled.div`
 
     p {
       color: var(--darkgreen);
-      span {
-        font-weight: bold;
-      }
     }
 
     .work-hours-text-1 {
-      padding: 0 70px;
+      padding: 0 50px;
       ul {
         padding: 0;
         li {
@@ -37,7 +34,7 @@ const WorkHoursStyle = styled.div`
     }
 
     .work-hours-text-2 {
-      padding: 0 70px;
+      padding: 0 50px;
       display: grid;
       justify-items: center;
     }
@@ -46,14 +43,16 @@ const WorkHoursStyle = styled.div`
 
 const Element2SvgStyle = styled(Element2Svg)`
   position: absolute;
-  top: 30%;
-  left: 32%;
-  width: 60px;
-  /* height: 10%; */
+  top: 28%;
+  left: 40%;
+  width: 50px;
 `;
 
 const WorkHoursSvgStyle = styled(WorkHoursSvg)`
-  width: 80%;
+  /* width: 80%; */
+  position: absolute;
+  bottom: 200px;
+  left: 0;
 `;
 
 const Element3SvgStyle = styled(Element3Svg)`
@@ -64,7 +63,7 @@ const Element3SvgStyle = styled(Element3Svg)`
 export default function WorkHours() {
   return (
     <WorkHoursStyle>
-      <div className="work-hours-content">
+      <div className="work-hours-content wrapper">
         <div className="work-hours-text-1">
           <p>
             <span>Mūsu dārziņā visi ir personības</span> un kā tādi arī drīkst

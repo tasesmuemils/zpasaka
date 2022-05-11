@@ -24,10 +24,7 @@ const Section2Style = styled.div`
 
     p {
       color: var(--white);
-      padding: 50px 70px;
-      span {
-        font-weight: bold;
-      }
+      padding: 50px 50px;
     }
   }
 `;
@@ -37,13 +34,12 @@ const Section21svgStyle = styled(Section21svg)`
 `;
 
 const Section22svgStyle = styled(Section22svg)`
-  padding-top: 8rem;
+  padding-top: 9rem;
   width: 45%;
-  /* min-height: 100%; */
 `;
 
 const ElementStyle = styled(Element)`
-  padding-left: 70px;
+  padding-left: 50px;
 
   path {
     fill: var(--lightgreen);
@@ -57,7 +53,7 @@ export default function Section2() {
         <Section21svgStyle />
         <Section22svgStyle />
       </div>
-      <div className="section-2-text">
+      <div className="section-2-text wrapper">
         <p>
           <span>Ja tu lasi šo, tad mēs jau esam satikušies.</span> Nākošais
           solis ir pieteikties uz ciemošanos. Zvani, raksti vai sūti telegrammu

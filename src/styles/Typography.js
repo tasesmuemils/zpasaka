@@ -9,8 +9,12 @@ const Typography = createGlobalStyle`
   }
 
   p,li {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 300;
+  }
+
+  span {
+    font-weight: bold;
   }
 
 `;

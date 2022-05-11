@@ -3,6 +3,10 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 
+* {
+  /* border: 1px solid red; */
+}
+
   :root {
           // Define main colors
           --green: #738928;
@@ -15,7 +19,10 @@ const GlobalStyles = createGlobalStyle`
           
   }
   .wrapper {
-    /* max-width: 960px; */
+    width: 1173px;
+    margin: 0 auto;
+    /* display: grid; */
+    /* justify-content: center; */
   }
 `;
 
