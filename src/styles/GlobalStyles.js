@@ -4,7 +4,7 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyles = createGlobalStyle`
 
 * {
-  /* border: 1px solid red; */
+  /* border: 1px s olid red; */
 }
 
   :root {
@@ -19,7 +19,8 @@ const GlobalStyles = createGlobalStyle`
           
   }
   .wrapper {
-    width: 1173px;
+    width: 1341px;
+    /* width: 1173px; */
     margin: 0 auto;
     /* display: grid; */
     /* justify-content: center; */

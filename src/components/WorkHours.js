@@ -11,7 +11,7 @@ import styled from "styled-components";
 const WorkHoursStyle = styled.div`
   position: relative;
   background-color: var(--lightgreen);
-  padding: 50px 0;
+  padding: 100px 0;
 
   .work-hours-content {
     display: grid;
@@ -51,7 +51,7 @@ const Element2SvgStyle = styled(Element2Svg)`
 const WorkHoursSvgStyle = styled(WorkHoursSvg)`
   /* width: 80%; */
   position: absolute;
-  bottom: 200px;
+  bottom: 15%;
   left: 0;
 `;
 

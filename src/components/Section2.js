@@ -21,6 +21,7 @@ const Section2Style = styled.div`
   .section-2-text {
     position: relative;
     display: flex;
+    padding-bottom: 100px;
 
     p {
       color: var(--white);

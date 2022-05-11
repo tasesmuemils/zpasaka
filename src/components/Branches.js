@@ -14,7 +14,7 @@ const BranchesStyle = styled.div`
     position: relative;
     display: grid;
     color: var(--lightgreen);
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 
     h2 {
       font-size: 32px;
@@ -22,7 +22,8 @@ const BranchesStyle = styled.div`
     }
 
     .branches-text {
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       div {
         padding: 0px 50px;
         p {
