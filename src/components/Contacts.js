@@ -7,13 +7,13 @@ import styled from "styled-components";
 
 // CSS
 const ContactsStyle = styled.div`
+  position: relative;
   background-color: var(--green);
   display: flex;
   justify-content: space-between;
-  padding: 70px;
+  padding: 100px 0;
 
   .contacts-content {
-    /* padding: 0px 70px; */
     color: var(--white);
     .contacts-text {
       ul {
@@ -27,13 +27,16 @@ const ContactsStyle = styled.div`
 `;
 
 const ContactsSvgStyle = styled(ContactsSvg)`
-  width: 40%;
+  position: absolute;
+  right: 100px;
+  bottom: 20px;
+  width: 30%;
 `;
 
 export default function Contacts() {
   return (
     <ContactsStyle>
-      <div className="contacts-content">
+      <div className="contacts-content wrapper">
         <h2>ZELTĀBELES PASAKA</h2>
         <div className="contacts-text">
           <ul>

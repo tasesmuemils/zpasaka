@@ -9,11 +9,11 @@ import styled from "styled-components";
 const Section7Style = styled.div`
   position: relative;
   background-color: var(--red);
-  padding: 100px 70px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  padding: 100px 0;
 
   .section7-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding-bottom: 100px;
     p {
       color: var(--white);
@@ -42,34 +42,36 @@ const Section7SvgStyle = styled(Section7Svg)`
 export default function Section7() {
   return (
     <Section7Style>
-      <div className="section7-content">
-        <p>
-          Kopš 2013. gada esam piedzīvojuši daudz burvīgu mirkļu. Jo mums ir
-          lieliski draugi un sadarbības partneri.
-        </p>
-        <ul>
-          <li>
-            <a href="">Disks</a>
-          </li>
-          <li>
-            <a href="">Vislabākā latviešu dziesmu izlase</a>
-          </li>
-          <li>
-            <a href="">Video „Še tev dālders”</a>
-          </li>
-          <li>
-            <a href="">Animācija</a>
-          </li>
-          <li>
-            <a href="">Kas te, es te</a>
-          </li>
-          <li>
-            <a href="">Martas video</a>
-          </li>
-          <li>
-            <a href="">Rīta ziņas</a>
-          </li>
-        </ul>
+      <div className="section7-content wrapper">
+        <div>
+          <p>
+            Kopš 2013. gada esam piedzīvojuši daudz burvīgu mirkļu. Jo mums ir
+            lieliski draugi un sadarbības partneri.
+          </p>
+          <ul>
+            <li>
+              <a href="">Disks</a>
+            </li>
+            <li>
+              <a href="">Vislabākā latviešu dziesmu izlase</a>
+            </li>
+            <li>
+              <a href="">Video „Še tev dālders”</a>
+            </li>
+            <li>
+              <a href="">Animācija</a>
+            </li>
+            <li>
+              <a href="">Kas te, es te</a>
+            </li>
+            <li>
+              <a href="">Martas video</a>
+            </li>
+            <li>
+              <a href="">Rīta ziņas</a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <Section7SvgStyle />

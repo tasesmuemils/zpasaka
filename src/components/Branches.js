@@ -13,16 +13,21 @@ const BranchesStyle = styled.div`
   .branches-content {
     position: relative;
     display: grid;
-    padding: 50px 70px;
     color: var(--lightgreen);
+    padding-bottom: 100px;
+
+    h2 {
+      font-size: 32px;
+      padding: 0px 50px;
+    }
 
     .branches-text {
-      display: flex;
-      p {
-        padding-right: 70px;
-
-        span {
-          font-weight: bold;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      div {
+        padding: 0px 50px;
+        p {
+          padding-bottom: 20px;
         }
       }
     }
@@ -39,24 +44,34 @@ export default function Branches() {
   return (
     <BranchesStyle>
       <BranchesSvgStyle />
-      <div className="branches-content">
+      <div className="branches-content wrapper">
         <h2>MUMS IR DIVAS MĀJAS</h2>
         <div className="branches-text">
-          <p>
-            Kaņieru iela 10a, saimniece Ilona Marksa, t.27540005,
-            kanieri@zepasaka.lv Kopš 2013. gada Daugavas krastā. Latviskā
-            dzīvesziņa, gadskārtu ieražas, sirsnīgas tradīcijas un pārbaudītas
-            vērtības. Esam lieli folkloras pētnieki un braši ārā gājēji. Nav
-            sliktu laikapstākļu, ir nepiemērots apģērbs un apavi.
-          </p>
-          <p>
-            Prūšu iela 81, saimniece Viktorija Seļuna, t.26106724,
-            prusi@zepasaka.lv Kopš 2021. gada pārņemtas bijušā dārziņa Apelsīnu
-            pasaka telpas. Lielo iespēju zeme ar plašām grupām, lielu āra
-            teritoriju, mākslas, mūzikas, logopēdijas, smilšu lampas, keramikas,
-            silto graudu kastes un citām iespējām. Mūsdienīga domāšana un
-            laikmetīgas idejas visam pa priekšu.
-          </p>
+          <div>
+            <p>
+              <span>Kaņieru iela 10a</span>, saimniece Ilona Marksa, t.27540005,
+              kanieri@zepasaka.lv
+            </p>
+            <p>
+              Kopš 2013. gada Daugavas krastā. Latviskā dzīvesziņa, gadskārtu
+              ieražas, sirsnīgas tradīcijas un pārbaudītas vērtības. Esam lieli
+              folkloras pētnieki un braši ārā gājēji. Nav sliktu laikapstākļu,
+              ir nepiemērots apģērbs un apavi.
+            </p>
+          </div>
+          <div>
+            <p>
+              <span>Prūšu iela 81</span>, saimniece Viktorija Seļuna,
+              t.26106724, prusi@zepasaka.lv
+            </p>
+            <p>
+              Kopš 2021. gada pārņemtas bijušā dārziņa Apelsīnu pasaka telpas.
+              Lielo iespēju zeme ar plašām grupām, lielu āra teritoriju,
+              mākslas, mūzikas, logopēdijas, smilšu lampas, keramikas, silto
+              graudu kastes un citām iespējām. Mūsdienīga domāšana un
+              laikmetīgas idejas visam pa priekšu.
+            </p>
+          </div>
         </div>
       </div>
     </BranchesStyle>

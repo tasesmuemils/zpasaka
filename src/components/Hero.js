@@ -13,10 +13,12 @@ const HEROStyle = styled.div`
   background-color: var(--green);
   display: grid;
   justify-content: center;
-  padding: 120px 0;
+  /* padding: 120px 0; */
 
   .hero-logo {
-    text-align: center;
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
     svg {
       /* width: 30%; */
       height: 30%;
@@ -24,14 +26,12 @@ const HEROStyle = styled.div`
   }
 
   .hero-text {
-    display: flex;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     p {
       color: var(--lightgreen);
-      padding: 50px 70px;
-      span {
-        font-weight: bold;
-      }
+      padding: 50px 10px;
+      margin: 30px 10px;
     }
   }
 `;
@@ -43,7 +43,6 @@ export default function Hero() {
         <div className="hero-logo">
           <HeroLogo />
         </div>
-
         <div className="hero-text">
           <p>
             <span>Zeltābeles pasaka</span> ir licencēts privātais dārziņš, kurš
