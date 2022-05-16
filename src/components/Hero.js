@@ -7,20 +7,15 @@ import styled from "styled-components";
 
 // CSS
 const HEROStyle = styled.div`
-  /* * {
-    border: 1px solid red;
-  } */
   background-color: var(--green);
   display: grid;
   justify-content: center;
-  /* padding: 120px 0; */
 
   .hero-logo {
     padding-top: 120px;
     display: flex;
     justify-content: center;
     svg {
-      /* width: 30%; */
       height: 30%;
     }
   }
@@ -29,9 +24,16 @@ const HEROStyle = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     p {
-      color: var(--lightgreen);
-      padding: 50px 10px;
-      margin: 30px 10px;
+      color: var(--fourthgreen);
+      padding: 50px 0 100px 0;
+    }
+
+    p:nth-child(1) {
+      padding-right: 50px;
+    }
+
+    p:nth-child(2) {
+      padding-left: 50px;
     }
   }
 `;

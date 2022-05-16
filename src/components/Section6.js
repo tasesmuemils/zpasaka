@@ -2,9 +2,9 @@
 import React from "react";
 // Components
 import Section6Svg from "../images/Section_6.svg";
-import Element3Svg from "../images/Element_3.svg";
+import Element4Svg from "../images/Element_4.svg";
 // Style
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 // CSS
 const Section6Style = styled.div`
@@ -26,15 +26,41 @@ const Section6Style = styled.div`
   }
 `;
 
+const horseBody = keyframes`
+  0% { transform: translateY(0); }
+ 50% { transform: translateY(-8px); }
+ 70% { transform: translateY(0px); }
+ 100% { transform: translateY(0); }
+`;
+
+const bird = keyframes`
+  0% { transform: translateY(0px); }
+ 5% { transform: translateY(-20px); }
+ 10% { transform: translateY(0px); }
+ 100% { transform: translateY(0px); }
+`;
+
 const Section6SvgStyle = styled(Section6Svg)`
   position: absolute;
   top: 5%;
   left: 95px;
   width: 40%;
   height: 90%;
+
+  #HorseBody {
+    animation-name: ${horseBody};
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  #Bird {
+    animation-name: ${bird};
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+  }
 `;
 
-const Element3SvgStyle = styled(Element3Svg)`
+const Element4SvgStyle = styled(Element4Svg)`
   padding-top: 30px;
   path {
     fill: var(--lightgreen);
@@ -64,7 +90,7 @@ export default function Section6() {
             būt. Dzīvojam tā, lai pašam prieks un kaimiņam arī. Lai mūsu
             ieradumi parāda mūsu vērtības.
           </p>
-          <Element3SvgStyle />
+          <Element4SvgStyle />
         </div>
       </div>
     </Section6Style>
