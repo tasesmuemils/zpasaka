@@ -3,7 +3,7 @@ import React from "react";
 // Components
 import Section7Svg from "../images/Section_7.svg";
 // Styles
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 // CSS
 const Section7Style = styled.div`
@@ -33,10 +33,48 @@ const Section7Style = styled.div`
   }
 `;
 
+const rotateShapes = keyframes`
+  0% { transform: rotate(0deg); }
+ 25% { transform: rotate(90deg); }
+ 50% { transform: rotate(180deg); }
+ 75% { transform: rotate(270deg); }
+ 100% { transform: rotate(360deg); }
+`;
+
+const rotateShapes2 = keyframes`
+  0% { transform: rotate(0deg); }
+ 25% { transform: rotate(-90deg); }
+ 50% { transform: rotate(-180deg); }
+ 75% { transform: rotate(-270deg); }
+ 100% { transform: rotate(-360deg); }
+`;
+
 const Section7SvgStyle = styled(Section7Svg)`
   position: absolute;
   bottom: 0;
   right: 300px;
+
+  #Bread_3,
+  #Bread_5,
+  #Bread_7 {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation-name: ${rotateShapes};
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.94, -0.15, 0, 1.07);
+  }
+
+  #Bread_4,
+  #Bread_6,
+  #Bread_8 {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation-name: ${rotateShapes2};
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.94, -0.15, 0, 1.07);
+  }
 `;
 
 export default function Section7() {

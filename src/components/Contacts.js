@@ -3,17 +3,17 @@ import React from "react";
 // Components
 import ContactsSvg from "../images/Contacts.svg";
 // Style
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 // CSS
 const ContactsStyle = styled.div`
   position: relative;
   background-color: var(--green);
-  display: flex;
-  justify-content: space-between;
+  /* display: flex; */
   padding: 100px 0;
 
   .contacts-content {
+    /* flex-basis: auto; */
     color: var(--white);
     .contacts-text {
       ul {
@@ -26,11 +26,49 @@ const ContactsStyle = styled.div`
   }
 `;
 
+const rotateShapes = keyframes`
+  0% { transform: rotate(0deg); }
+ 25% { transform: rotate(90deg); }
+ 50% { transform: rotate(180deg); }
+ 75% { transform: rotate(270deg); }
+ 100% { transform: rotate(360deg); }
+`;
+
+const rotateShapes2 = keyframes`
+  0% { transform: rotate(0deg); }
+ 25% { transform: rotate(-90deg); }
+ 50% { transform: rotate(-180deg); }
+ 75% { transform: rotate(-270deg); }
+ 100% { transform: rotate(-360deg); }
+`;
+
 const ContactsSvgStyle = styled(ContactsSvg)`
   position: absolute;
   right: 100px;
   bottom: 20px;
   width: 30%;
+
+  #Shape_2,
+  #Shape_4 {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation-name: ${rotateShapes};
+    animation-duration: 5s;
+    /* animation-delay: 1s; */
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  #Shape_3,
+  #Shape_5 {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation-name: ${rotateShapes2};
+    animation-duration: 5s;
+    /* animation-delay: 1s; */
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
 `;
 
 export default function Contacts() {

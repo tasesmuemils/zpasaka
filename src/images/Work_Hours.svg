@@ -319,6 +319,7 @@
 <path id="Vector_254" d="M168 280H161V315H168V280Z" fill="#738928"/>
 <path id="Vector_255" d="M161 280H154V322H161V280Z" fill="#738928"/>
 <path id="Vector_256" d="M154 280H147V329H154V280Z" fill="#738928"/>
+<g id="Head">
 <path id="Vector_257" d="M595 98H504V203H595V98Z" fill="#F8C4B6"/>
 <path id="Vector_258" d="M602 154H581V161H602V154Z" fill="#F8C4B6"/>
 <path id="Vector_259" d="M588 147H581V154H588V147Z" fill="#40500E"/>
@@ -326,7 +327,8 @@
 <path id="Vector_261" d="M595 161H567V175H595V161Z" fill="#BD111F"/>
 <path id="Vector_262" d="M581 168H553V182H581V168Z" fill="#BD111F"/>
 <path id="Vector_263" d="M595 182H504V203H595V182Z" fill="#BD111F"/>
-<g id="Group_32">
+</g>
+<g id="Person_3">
 <path id="Vector_264" d="M497 70H448V126H497V70Z" fill="#40500E"/>
 <path id="Vector_265" d="M511 126H455V133H511V126Z" fill="#BD111F"/>
 <path id="Vector_266" d="M518 119H511V133H518V119Z" fill="#BD111F"/>
@@ -341,28 +343,27 @@
 <path id="Vector_275" d="M427 21H420V35H427V21Z" fill="#BD111F"/>
 <path id="Vector_276" d="M511 56H504V63H511V56Z" fill="#F8C4B6"/>
 <path id="Vector_277" d="M497 49H490V56H497V49Z" fill="#738928"/>
+<path id="Vector_278" d="M483 91H476V98H483V91Z" fill="#A1AC45"/>
+<path id="Vector_279" d="M483 77H476V84H483V77Z" fill="#A1AC45"/>
+<path id="Vector_280" d="M490 91H483V98H490V91Z" fill="#738928"/>
+<path id="Vector_281" d="M483 84H476V91H483V84Z" fill="#738928"/>
+<path id="Vector_282" d="M497 91H490V98H497V91Z" fill="#A1AC45"/>
+<path id="Vector_283" d="M504 91H497V98H504V91Z" fill="#738928"/>
+<path id="Vector_284" d="M511 91H504V98H511V91Z" fill="#F8C4B6"/>
 </g>
-<g id="Group_33">
-<path id="Vector_278" d="M406 70H357V126H406V70Z" fill="#BD111F"/>
-<path id="Vector_279" d="M420 126H364V133H420V126Z" fill="#40500E"/>
-<path id="Vector_280" d="M427 119H420V133H427V119Z" fill="#BD111F"/>
-<path id="Vector_281" d="M413 14H357V70H413V14Z" fill="#F8C4B6"/>
-<path id="Vector_282" d="M413 14H350V28H413V14Z" fill="#BD111F"/>
-<path id="Vector_283" d="M399 21H343V42H399V21Z" fill="#BD111F"/>
-<path id="Vector_284" d="M392 42H343V49H392V42Z" fill="#BD111F"/>
-<path id="Vector_285" d="M364 49H343V56H364V49Z" fill="#BD111F"/>
-<path id="Vector_286" d="M357 56H350V63H357V56Z" fill="#BD111F"/>
-<path id="Vector_287" d="M406 7H357V14H406V7Z" fill="#BD111F"/>
-<path id="Vector_288" d="M420 56H413V63H420V56Z" fill="#F8C4B6"/>
-<path id="Vector_289" d="M406 49H399V56H406V49Z" fill="#738928"/>
-</g>
-<path id="Vector_290" d="M483 91H476V98H483V91Z" fill="#A1AC45"/>
-<path id="Vector_291" d="M483 77H476V84H483V77Z" fill="#A1AC45"/>
-<path id="Vector_292" d="M490 91H483V98H490V91Z" fill="#738928"/>
-<path id="Vector_293" d="M483 84H476V91H483V84Z" fill="#738928"/>
-<path id="Vector_294" d="M497 91H490V98H497V91Z" fill="#A1AC45"/>
-<path id="Vector_295" d="M504 91H497V98H504V91Z" fill="#738928"/>
-<path id="Vector_296" d="M511 91H504V98H511V91Z" fill="#F8C4B6"/>
+<g id="Person_2">
+<path id="Vector_285" d="M406 70H357V126H406V70Z" fill="#BD111F"/>
+<path id="Vector_286" d="M420 126H364V133H420V126Z" fill="#40500E"/>
+<path id="Vector_287" d="M427 119H420V133H427V119Z" fill="#BD111F"/>
+<path id="Vector_288" d="M413 14H357V70H413V14Z" fill="#F8C4B6"/>
+<path id="Vector_289" d="M413 14H350V28H413V14Z" fill="#BD111F"/>
+<path id="Vector_290" d="M399 21H343V42H399V21Z" fill="#BD111F"/>
+<path id="Vector_291" d="M392 42H343V49H392V42Z" fill="#BD111F"/>
+<path id="Vector_292" d="M364 49H343V56H364V49Z" fill="#BD111F"/>
+<path id="Vector_293" d="M357 56H350V63H357V56Z" fill="#BD111F"/>
+<path id="Vector_294" d="M406 7H357V14H406V7Z" fill="#BD111F"/>
+<path id="Vector_295" d="M420 56H413V63H420V56Z" fill="#F8C4B6"/>
+<path id="Vector_296" d="M406 49H399V56H406V49Z" fill="#738928"/>
 <path id="Vector_297" d="M392 77H385V84H392V77Z" fill="#738928"/>
 <path id="Vector_298" d="M399 77H392V84H399V77Z" fill="#CDD496"/>
 <path id="Vector_299" d="M406 77H399V84H406V77Z" fill="#738928"/>
@@ -373,7 +374,8 @@
 <path id="Vector_304" d="M441 77H434V84H441V77Z" fill="#CDD496"/>
 <path id="Vector_305" d="M448 77H441V84H448V77Z" fill="#738928"/>
 <path id="Vector_306" d="M455 77H448V84H455V77Z" fill="#F8C4B6"/>
-<g id="Group_34">
+</g>
+<g id="Person_1">
 <path id="Vector_307" d="M308 70H259V126H308V70Z" fill="white"/>
 <path id="Vector_308" d="M322 126H266V133H322V126Z" fill="white"/>
 <path id="Vector_309" d="M329 119H322V133H329V119Z" fill="#40500E"/>
@@ -387,7 +389,7 @@
 <path id="Vector_317" d="M343 77H336V84H343V77Z" fill="#CDD496"/>
 <path id="Vector_318" d="M350 77H343V84H350V77Z" fill="#738928"/>
 <path id="Vector_319" d="M357 77H350V84H357V77Z" fill="#40500E"/>
-<g id="Group_35">
+<g id="Group_32">
 <path id="Vector_320" d="M266 42H245V49H266V42Z" fill="#40500E"/>
 <path id="Vector_321" d="M266 35H252V42H266V35Z" fill="#40500E"/>
 <path id="Vector_322" d="M273 28H259V35H273V28Z" fill="#40500E"/>
@@ -398,7 +400,7 @@
 <path id="Vector_327" d="M315 7H301V14H315V7Z" fill="#40500E"/>
 <path id="Vector_328" d="M259 49H245V70H259V49Z" fill="#40500E"/>
 </g>
-<g id="Group_36">
+<g id="Group_33">
 <path id="Vector_329" d="M308 49H259V70H308V49Z" fill="white"/>
 <path id="Vector_330" d="M308 35H266V49H308V35Z" fill="white"/>
 <path id="Vector_331" d="M308 21H273V35H308V21Z" fill="white"/>
@@ -411,7 +413,7 @@
 <path id="Vector_338" d="M287 0H280V21H287V0Z" fill="white"/>
 </g>
 <path id="Vector_339" d="M308 28H301V35H308V28Z" fill="#40500E"/>
-<g id="Group_37">
+<g id="Group_34">
 <path id="Vector_340" d="M259 119H252V126H259V119Z" fill="#40500E"/>
 <path id="Vector_341" d="M252 119H245V133H252V119Z" fill="#40500E"/>
 <path id="Vector_342" d="M245 126H238V161H245V126Z" fill="#40500E"/>
@@ -426,7 +428,7 @@
 <path id="Vector_349" d="M287 147H259V154H287V147Z" fill="#40500E"/>
 <path id="Vector_350" d="M483 154H455V161H483V154Z" fill="#40500E"/>
 <path id="Vector_351" d="M476 147H462V154H476V147Z" fill="#40500E"/>
-<g id="Group_38">
+<g id="Group_35">
 <path id="Vector_352" d="M420 252H413V259H420V252Z" fill="#A1AC45"/>
 <path id="Vector_353" d="M427 245H420V252H427V245Z" fill="#A1AC45"/>
 <path id="Vector_354" d="M434 238H427V245H434V238Z" fill="#A1AC45"/>
@@ -446,8 +448,8 @@
 <path id="Vector_368" d="M420 140H413V147H420V140Z" fill="#A1AC45"/>
 <path id="Vector_369" d="M427 133H420V140H427V133Z" fill="#A1AC45"/>
 </g>
-<g id="Group_39">
-<g id="Group_40">
+<g id="Group_36">
+<g id="Group_37">
 <path id="Vector_370" d="M483 185.5V192.5H490V185.5H483Z" fill="#738928"/>
 <path id="Vector_371" d="M476 192.5V199.5H483V192.5H476Z" fill="#738928"/>
 <path id="Vector_372" d="M469 199.5V206.5H476V199.5H469Z" fill="#738928"/>
@@ -455,7 +457,7 @@
 <path id="Vector_374" d="M455 185.5V192.5H462V185.5H455Z" fill="#738928"/>
 <path id="Vector_375" d="M448 192.5V199.5H455V192.5H448Z" fill="#738928"/>
 </g>
-<g id="Group_41">
+<g id="Group_38">
 <path id="Vector_376" d="M483 206.5V213.5H490V206.5H483Z" fill="#738928"/>
 <path id="Vector_377" d="M476 213.5V220.5H483V213.5H476Z" fill="#738928"/>
 <path id="Vector_378" d="M469 220.5V227.5H476V220.5H469Z" fill="#738928"/>
@@ -464,7 +466,7 @@
 <path id="Vector_381" d="M448 213.5V220.5H455V213.5H448Z" fill="#738928"/>
 </g>
 </g>
-<g id="Group_42">
+<g id="Group_39">
 <path id="Vector_382" d="M395.5 252H388.5V259H395.5V252Z" fill="#A1AC45"/>
 <path id="Vector_383" d="M402.5 245H395.5V252H402.5V245Z" fill="#A1AC45"/>
 <path id="Vector_384" d="M409.5 238H402.5V245H409.5V238Z" fill="#A1AC45"/>

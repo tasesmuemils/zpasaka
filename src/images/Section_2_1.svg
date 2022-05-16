@@ -49,7 +49,7 @@
 <path id="Vector_40" d="M856 42H884V7H856V42Z" fill="#BD111F"/>
 <path id="Vector_41" d="M863 77H884V42H863V77Z" fill="#BD111F"/>
 <path id="Vector_42" d="M870 91H884V70H870V91Z" fill="#BD111F"/>
-<path id="Vector_43" d="M870 70H891V21H870V70Z" fill="#BD111F"/>
+<path id="testVector" d="M870 70H891V21H870V70Z" fill="#BD111F"/>
 </g>
 </g>
 <defs>

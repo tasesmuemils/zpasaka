@@ -5,13 +5,13 @@ import WorkHoursSvg from "../images/Work_Hours.svg";
 import Element2Svg from "../images/Element_2.svg";
 import Element3Svg from "../images/Element_3.svg";
 // Style
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 // CSS
 const WorkHoursStyle = styled.div`
   position: relative;
   background-color: var(--lightgreen);
-  padding: 100px 0;
+  padding: 80px 0;
 
   .work-hours-content {
     display: grid;
@@ -23,7 +23,7 @@ const WorkHoursStyle = styled.div`
     }
 
     .work-hours-text-1 {
-      padding: 0 50px;
+      padding-right: 50px;
       ul {
         padding: 0;
         li {
@@ -34,25 +34,42 @@ const WorkHoursStyle = styled.div`
     }
 
     .work-hours-text-2 {
-      padding: 0 50px;
+      padding-left: 50px;
       display: grid;
       justify-items: center;
     }
   }
 `;
 
+const person = keyframes`
+  0% { transform: translateY(0); }
+ 50% { transform: translateY(-7px); }
+ 100% { transform: translateY(0); }
+`;
+
 const Element2SvgStyle = styled(Element2Svg)`
   position: absolute;
   top: 28%;
-  left: 40%;
+  left: 35%;
   width: 50px;
 `;
 
 const WorkHoursSvgStyle = styled(WorkHoursSvg)`
   /* width: 80%; */
   position: absolute;
-  bottom: 15%;
+  bottom: 26%;
   left: 0;
+
+  #Person_1,
+  #Person_2,
+  #Person_3,
+  #Head {
+    animation-name: ${person};
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+  }
 `;
 
 const Element3SvgStyle = styled(Element3Svg)`
