@@ -2,8 +2,10 @@
 import React from "react";
 //Components
 import HeroLogo from "../images/HERO_LOGO.svg";
+import AosConfig from "./AosConfig";
 // Styling
 import styled from "styled-components";
+import "aos/dist/aos.css";
 
 // CSS
 const HEROStyle = styled.div`
@@ -39,13 +41,22 @@ const HEROStyle = styled.div`
 `;
 
 export default function Hero() {
+  AosConfig();
   return (
     <HEROStyle>
       <div className="wrapper">
-        <div className="hero-logo">
+        <div
+          data-aos="fade-down"
+          // data-aos-duration="4000"
+          className="hero-logo"
+        >
           <HeroLogo />
         </div>
-        <div className="hero-text">
+        <div
+          data-aos="fade-down"
+          data-aos-duration="2000"
+          className="hero-text"
+        >
           <p>
             <span>Zeltābeles pasaka</span> ir licencēts privātais dārziņš, kurš
             Kaņieru ielā 10 a darbojas kopš 2013. gada ar nosaukumu Zeltābele.

@@ -4,6 +4,8 @@ import React from "react";
 import Section7Svg from "../images/Section_7.svg";
 // Styles
 import styled, { keyframes } from "styled-components";
+import "aos/dist/aos.css";
+import AosConfig from "./AosConfig";
 
 // CSS
 const Section7Style = styled.div`
@@ -31,6 +33,12 @@ const Section7Style = styled.div`
       }
     }
   }
+
+  .section7-svg-wrapper {
+    position: absolute;
+    bottom: 0px;
+    right: 300px;
+  }
 `;
 
 const rotateShapes = keyframes`
@@ -50,10 +58,7 @@ const rotateShapes2 = keyframes`
 `;
 
 const Section7SvgStyle = styled(Section7Svg)`
-  position: absolute;
-  bottom: 0;
-  right: 300px;
-
+  vertical-align: middle;
   #Bread_3,
   #Bread_5,
   #Bread_7 {
@@ -78,9 +83,10 @@ const Section7SvgStyle = styled(Section7Svg)`
 `;
 
 export default function Section7() {
+  AosConfig();
   return (
     <Section7Style>
-      <div className="section7-content wrapper">
+      <div className="section7-content wrapper" data-aos="fade-up">
         <div>
           <p>
             Kopš 2013. gada esam piedzīvojuši daudz burvīgu mirkļu. Jo mums ir
@@ -111,8 +117,9 @@ export default function Section7() {
           </ul>
         </div>
       </div>
-
-      <Section7SvgStyle />
+      <div className="section7-svg-wrapper" data-aos="fade-left">
+        <Section7SvgStyle />
+      </div>
     </Section7Style>
   );
 }
