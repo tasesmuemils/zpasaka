@@ -7,18 +7,13 @@ import Section2svg from "../images/Section_2.svg";
 import Element from "../images/Element.svg";
 // Styles
 import styled, { keyframes } from "styled-components";
-import { useSpring, animated } from "react-spring";
+import "aos/dist/aos.css";
+import AosConfig from "./AosConfig";
 
 // CSS
 const Section2Style = styled.div`
   position: relative;
   background-color: var(--secondgreen);
-
-  .section2SVGs {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 
   .section-2-text {
     position: relative;
@@ -61,11 +56,6 @@ const Section2svgStyle = styled(Section2svg)`
   }
 `;
 
-// const Section22svgStyle = styled(Section22svg)`
-//   padding-top: 9rem;
-//   width: 45%;
-// `;
-
 const ElementStyle = styled(Element)`
   padding-top: 50px;
   path {
@@ -74,14 +64,13 @@ const ElementStyle = styled(Element)`
 `;
 
 export default function Section2() {
+  AosConfig();
   return (
     <Section2Style>
-      <div className="section2SVGs">
+      <div data-aos="fade-up">
         <Section2svgStyle />
-        {/* <Section21svgStyle /> */}
-        {/* <Section22svgStyle /> */}
       </div>
-      <div className="section-2-text wrapper">
+      <div data-aos="fade-up" className="section-2-text wrapper">
         <div>
           <p>
             <span>Ja tu lasi šo, tad mēs jau esam satikušies.</span> Nākošais

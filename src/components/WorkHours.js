@@ -6,7 +6,8 @@ import Element2Svg from "../images/Element_2.svg";
 import Element3Svg from "../images/Element_3.svg";
 // Style
 import styled, { keyframes } from "styled-components";
-
+import "aos/dist/aos.css";
+import AosConfig from "./AosConfig";
 // CSS
 const WorkHoursStyle = styled.div`
   position: relative;
@@ -39,6 +40,11 @@ const WorkHoursStyle = styled.div`
       justify-items: center;
     }
   }
+  .svg-wrapper {
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+  }
 `;
 
 const person = keyframes`
@@ -49,17 +55,12 @@ const person = keyframes`
 
 const Element2SvgStyle = styled(Element2Svg)`
   position: absolute;
-  top: 28%;
-  left: 35%;
+  top: 20%;
+  left: 67%;
   width: 50px;
 `;
 
 const WorkHoursSvgStyle = styled(WorkHoursSvg)`
-  /* width: 80%; */
-  position: absolute;
-  bottom: 26%;
-  left: 0;
-
   #Person_1,
   #Person_2,
   #Person_3,
@@ -78,10 +79,11 @@ const Element3SvgStyle = styled(Element3Svg)`
 `;
 
 export default function WorkHours() {
+  AosConfig();
   return (
     <WorkHoursStyle>
       <div className="work-hours-content wrapper">
-        <div className="work-hours-text-1">
+        <div className="work-hours-text-1" data-aos="fade-right">
           <p>
             <span>Mūsu dārziņā visi ir personības</span> un kā tādi arī drīkst
             uzvesties. Protams, ir arī mums rāmis:
@@ -92,10 +94,9 @@ export default function WorkHours() {
             <li>Pusdienas 12:00</li>
             <li>Launags 15:30</li>
           </ul>
-          <Element2SvgStyle />
-          <WorkHoursSvgStyle />
+          <Element2SvgStyle data-aos="fade-right" />
         </div>
-        <div className="work-hours-text-2">
+        <div className="work-hours-text-2" data-aos="fade-left">
           <p>
             Bet cienām katra individuālos paradumus un pieejam lietām radoši.
             Drošība pirmajā vietā, kājas siltumā un visi laimīgi. Pilnai laimei
@@ -110,6 +111,9 @@ export default function WorkHours() {
           </p>
           <Element3SvgStyle />
         </div>
+      </div>
+      <div className="svg-wrapper" data-aos="fade-right">
+        <WorkHoursSvgStyle />
       </div>
     </WorkHoursStyle>
   );

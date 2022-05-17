@@ -4,6 +4,8 @@ import React from "react";
 import BranchesSvg from "../images/Branches.svg";
 // Styles
 import styled, { keyframes } from "styled-components";
+import "aos/dist/aos.css";
+import AosConfig from "./AosConfig";
 
 // CSS
 const BranchesStyle = styled.div`
@@ -80,10 +82,13 @@ const BranchesSvgStyle = styled(BranchesSvg)`
 `;
 
 export default function Branches() {
+  AosConfig();
   return (
     <BranchesStyle>
-      <BranchesSvgStyle />
-      <div className="branches-content wrapper">
+      <div data-aos="fade-down">
+        <BranchesSvgStyle />
+      </div>
+      <div className="branches-content wrapper" data-aos="fade-down">
         <h2>MUMS IR DIVAS MĀJAS</h2>
         <div className="branches-text">
           <div>

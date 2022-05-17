@@ -4,6 +4,8 @@ import React from "react";
 import ContactsSvg from "../images/Contacts.svg";
 // Style
 import styled, { keyframes } from "styled-components";
+import "aos/dist/aos.css";
+import AosConfig from "./AosConfig";
 
 // CSS
 const ContactsStyle = styled.div`
@@ -24,6 +26,12 @@ const ContactsStyle = styled.div`
       }
     }
   }
+
+  .contact-svg-wrapper {
+    position: absolute;
+    right: 0;
+    top: 15%;
+  }
 `;
 
 const rotateShapes = keyframes`
@@ -43,11 +51,7 @@ const rotateShapes2 = keyframes`
 `;
 
 const ContactsSvgStyle = styled(ContactsSvg)`
-  position: absolute;
-  right: 100px;
-  bottom: 20px;
-  width: 30%;
-
+  width: 80%;
   #Shape_2,
   #Shape_4 {
     transform-box: fill-box;
@@ -72,9 +76,10 @@ const ContactsSvgStyle = styled(ContactsSvg)`
 `;
 
 export default function Contacts() {
+  AosConfig();
   return (
     <ContactsStyle>
-      <div className="contacts-content wrapper">
+      <div className="contacts-content wrapper" data-aos="fade-right">
         <h2>ZELTĀBELES PASAKA</h2>
         <div className="contacts-text">
           <ul>
@@ -96,7 +101,13 @@ export default function Contacts() {
           </ul>
         </div>
       </div>
-      <ContactsSvgStyle />
+      <div
+        className="contact-svg-wrapper"
+        data-aos="fade-up"
+        data-aos-offset="100"
+      >
+        <ContactsSvgStyle />
+      </div>
     </ContactsStyle>
   );
 }

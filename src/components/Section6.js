@@ -5,6 +5,8 @@ import Section6Svg from "../images/Section_6.svg";
 import Element4Svg from "../images/Element_4.svg";
 // Style
 import styled, { keyframes } from "styled-components";
+import "aos/dist/aos.css";
+import AosConfig from "./AosConfig";
 
 // CSS
 const Section6Style = styled.div`
@@ -24,6 +26,12 @@ const Section6Style = styled.div`
       }
     }
   }
+
+  .section6-svg-wrapper {
+    position: absolute;
+    top: 3%;
+    left: 10%;
+  }
 `;
 
 const horseBody = keyframes`
@@ -41,12 +49,7 @@ const bird = keyframes`
 `;
 
 const Section6SvgStyle = styled(Section6Svg)`
-  position: absolute;
-  top: 5%;
-  left: 95px;
-  width: 40%;
-  height: 90%;
-
+  width: 90%;
   #HorseBody {
     animation-name: ${horseBody};
     animation-duration: 1s;
@@ -68,10 +71,13 @@ const Element4SvgStyle = styled(Element4Svg)`
 `;
 
 export default function Section6() {
+  AosConfig();
   return (
     <Section6Style>
-      <Section6SvgStyle />
-      <div className="section6-content wrapper">
+      <div className="section6-svg-wrapper" data-aos="fade-right">
+        <Section6SvgStyle />
+      </div>
+      <div className="section6-content wrapper" data-aos="fade-left">
         <div>
           <p>
             <span>Kā mēs dzīvojam?</span> Saskaņā ar sevi un dabu. Mācāmies

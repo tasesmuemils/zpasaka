@@ -4,7 +4,7 @@ import { device } from "./mediaQueries";
 const GlobalStyles = createGlobalStyle`
 
 * {
-  /* border: 1px s olid red; */
+  /* border: 1px solid red; */
 }
 
   :root {
@@ -35,6 +35,7 @@ const GlobalStyles = createGlobalStyle`
       max-width: 700px;
     }
   }
+
 `;
 
 export default GlobalStyles;
