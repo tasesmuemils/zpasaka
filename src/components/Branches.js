@@ -44,17 +44,17 @@ const BranchesStyle = styled.div`
 
 const car = keyframes`
   0% { transform: translateY(0); }
- 50% { transform: translateY(5px); }
+ 50% { transform: translateY(2px); }
  100% { transform: translateY(0); }
 `;
 
-const road = keyframes`
-  0% { transform: translateX(0); }
- 30% { transform: translateX(10px); }
- 50% { transform: translateX(0); }
- 70% { transform: translateX(-10px); }
- 100% { transform: translateX(0px); }
-`;
+// const road = keyframes`
+//   0% { transform: translateX(0); }
+//  30% { transform: translateX(10px); }
+//  50% { transform: translateX(0); }
+//  70% { transform: translateX(-10px); }
+//  100% { transform: translateX(0px); }
+// `;
 
 const BranchesSvgStyle = styled(BranchesSvg)`
   /* position: absolute; */
@@ -66,15 +66,7 @@ const BranchesSvgStyle = styled(BranchesSvg)`
   #Car_2,
   #Car_light_2 {
     animation-name: ${car};
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-fill-mode: both;
-  }
-
-  #Road {
-    animation-name: ${road};
-    animation-duration: 2s;
+    animation-duration: 0.2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-fill-mode: both;

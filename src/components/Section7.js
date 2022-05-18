@@ -2,6 +2,7 @@
 import React from "react";
 // Components
 import Section7Svg from "../images/Section_7.svg";
+import Footer from "./Footer";
 // Styles
 import styled, { keyframes } from "styled-components";
 import "aos/dist/aos.css";
@@ -11,7 +12,7 @@ import AosConfig from "./AosConfig";
 const Section7Style = styled.div`
   position: relative;
   background-color: var(--red);
-  padding: 100px 0;
+  padding-top: 100px;
 
   .section7-content {
     display: grid;
@@ -120,6 +121,7 @@ export default function Section7() {
       <div className="section7-svg-wrapper" data-aos="fade-left">
         <Section7SvgStyle />
       </div>
+      <Footer />
     </Section7Style>
   );
 }
