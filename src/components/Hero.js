@@ -3,6 +3,7 @@ import React from "react";
 //Components
 import HeroLogo from "../images/HERO_LOGO.svg";
 import AosConfig from "./AosConfig";
+import Navigation from "./Navigation";
 // Styling
 import styled from "styled-components";
 import "aos/dist/aos.css";
@@ -14,7 +15,7 @@ const HEROStyle = styled.div`
   justify-content: center;
 
   .hero-logo {
-    padding-top: 120px;
+    padding-top: 80px;
     display: flex;
     justify-content: center;
     svg {
@@ -26,8 +27,9 @@ const HEROStyle = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     p {
+      margin: 0;
       color: var(--fourthgreen);
-      padding: 50px 0 100px 0;
+      padding: 95px 0 100px 0;
     }
 
     p:nth-child(1) {
@@ -45,11 +47,8 @@ export default function Hero() {
   return (
     <HEROStyle>
       <div className="wrapper">
-        <div
-          data-aos="fade-down"
-          // data-aos-duration="4000"
-          className="hero-logo"
-        >
+        <Navigation />
+        <div data-aos="fade-down" className="hero-logo">
           <HeroLogo />
         </div>
         <div

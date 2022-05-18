@@ -53,6 +53,46 @@ const person = keyframes`
  100% { transform: translateY(0); }
 `;
 
+const person1 = keyframes`
+ 0% { transform: translateY(0); }
+ 10% { transform: translateY(0); }
+ 20% { transform: translateY(0); }
+ 30% { transform: translateY(-20px); }
+ 40% { transform: translateY(-20px); }
+ 50% { transform: translateY(5px); }
+ 60% { transform: translateY(0); }
+ 70% { transform: translateY(0); }
+ 80% { transform: translateY(0); }
+ 90% { transform: translateY(0); }
+ 100% { transform: translateY(0); }
+`;
+const person2 = keyframes`
+ 0% { transform: translateY(0); }
+ 10% { transform: translateY(0); }
+ 20% { transform: translateY(-20px); }
+ 30% { transform: translateY(-20px); }
+ 40% { transform: translateY(5px); }
+ 50% { transform: translateY(0); }
+ 60% { transform: translateY(0); }
+ 70% { transform: translateY(0); }
+ 80% { transform: translateY(0); }
+ 90% { transform: translateY(0); }
+ 100% { transform: translateY(0); }
+`;
+const person3 = keyframes`
+ 0% { transform: translateY(0); }
+ 10% { transform: translateY(-20px); }
+ 20% { transform: translateY(-20px); }
+ 30% { transform: translateY(5px); }
+ 40% { transform: translateY(0); }
+ 50% { transform: translateY(0); }
+ 60% { transform: translateY(0); }
+ 70% { transform: translateY(0); }
+ 80% { transform: translateY(0); }
+ 90% { transform: translateY(0); }
+ 100% { transform: translateY(0); }
+`;
+
 const Element2SvgStyle = styled(Element2Svg)`
   position: absolute;
   top: 20%;
@@ -61,15 +101,32 @@ const Element2SvgStyle = styled(Element2Svg)`
 `;
 
 const WorkHoursSvgStyle = styled(WorkHoursSvg)`
-  #Person_1,
-  #Person_2,
-  #Person_3,
   #Head {
     animation-name: ${person};
     animation-duration: 1s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+  }
+
+  #Person_1 {
+    animation-name: ${person1};
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+  }
+
+  #Person_2 {
+    animation-name: ${person2};
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+  }
+
+  #Person_3 {
+    animation-name: ${person3};
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
   }
 `;
 

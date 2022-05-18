@@ -52,8 +52,8 @@ const rotateShapes2 = keyframes`
 
 const ContactsSvgStyle = styled(ContactsSvg)`
   width: 80%;
-  #Shape_2,
-  #Shape_4 {
+  #Vector_2,
+  #Shape_5 {
     transform-box: fill-box;
     transform-origin: center;
     animation-name: ${rotateShapes};
@@ -63,8 +63,8 @@ const ContactsSvgStyle = styled(ContactsSvg)`
     animation-timing-function: ease-in-out;
   }
 
-  #Shape_3,
-  #Shape_5 {
+  #Vector_4,
+  #Vector_3 {
     transform-box: fill-box;
     transform-origin: center;
     animation-name: ${rotateShapes2};

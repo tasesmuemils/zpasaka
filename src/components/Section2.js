@@ -42,6 +42,15 @@ const rotate = keyframes`
  100% { transform: rotate(90deg); }
 `;
 
+const jumpBall = keyframes`
+  0% { transform: translateY(0) rotate(0deg); }
+  12.5% { transform: translateY(-10) rotate(45deg); }
+  25% { transform: translateY(-20px) rotate(90deg); }
+ 50% { transform: translateY(-40px) rotate(180deg); }
+ 75% { transform: translateY(0px) rotate(270deg); }
+ 100% { transform: translateY(0) rotate(360deg); }
+`;
+
 const Section2svgStyle = styled(Section2svg)`
   width: 100%;
   transform: translateY(-60px);
@@ -49,8 +58,8 @@ const Section2svgStyle = styled(Section2svg)`
   #Group_3 {
     transform-box: fill-box;
     transform-origin: center;
-    animation-name: ${rotate};
-    animation-duration: 1s;
+    animation: ${jumpBall};
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }

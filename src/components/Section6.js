@@ -34,31 +34,48 @@ const Section6Style = styled.div`
   }
 `;
 
-const horseBody = keyframes`
-  0% { transform: translateY(0); }
- 50% { transform: translateY(-8px); }
- 70% { transform: translateY(0px); }
- 100% { transform: translateY(0); }
+const horseEyes = keyframes`
+ 0% { opacity: 1 }
+ 10% { opacity: 1 }
+ 19% { opacity: 1 }
+ 20% { opacity: 0 }
+ 21% { opacity: 1 }
+ 30% { opacity: 1 }
+ 40% { opacity: 1 }
+ 50% { opacity: 1 }
+ 60% { opacity: 1 }
+ 80% { opacity: 1 }
+ 90% { opacity: 1 }
+ 100% { opacity: 1 }
 `;
 
-const bird = keyframes`
-  0% { transform: translateY(0px); }
- 5% { transform: translateY(-20px); }
- 10% { transform: translateY(0px); }
- 100% { transform: translateY(0px); }
+const birdEye = keyframes`
+ 0% { opacity: 1 }
+ 10% { opacity: 1 }
+ 20% { opacity: 1 }
+ 30% { opacity: 1 }
+ 40% { opacity: 1 }
+ 50% { opacity: 1 }
+ 57% { opacity: 1 }
+ 60% { opacity: 0 }
+ 63% { opacity: 1 }
+ 80% { opacity: 1 }
+ 90% { opacity: 1 }
+ 100% { opacity: 1 }
 `;
 
 const Section6SvgStyle = styled(Section6Svg)`
   width: 90%;
-  #HorseBody {
-    animation-name: ${horseBody};
-    animation-duration: 1s;
+  #Horse_Eye_1,
+  #Horse_Eye_2 {
+    animation-name: ${horseEyes};
+    animation-duration: 4s;
     animation-iteration-count: infinite;
   }
 
-  #Bird {
-    animation-name: ${bird};
-    animation-duration: 2.5s;
+  #Bird_eye {
+    animation-name: ${birdEye};
+    animation-duration: 4s;
     animation-iteration-count: infinite;
   }
 `;
