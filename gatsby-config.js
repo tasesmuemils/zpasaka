@@ -4,14 +4,15 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
-    "gatsby-plugin-styled-components",
+    `gatsby-plugin-styled-components`,
     {
-      resolve: "gatsby-plugin-react-svg",
+      resolve: `gatsby-plugin-react-svg`,
       options: {
         rule: {
           include: /images/,
         },
       },
     },
+    `gatsby-plugin-netlify`,
   ],
 };
