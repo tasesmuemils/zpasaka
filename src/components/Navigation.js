@@ -6,17 +6,16 @@ import LogoName from "../images/Logo_name.svg";
 import styled from "styled-components";
 import "aos/dist/aos.css";
 import AosConfig from "./AosConfig";
+import { device } from "../styles/mediaQueries";
 
 // CSS
 const NavigationStyle = styled.div`
   .navigation {
     display: grid;
-    justify-content: center;
     padding-top: 10px;
     .nav-items {
       display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      justify-content: center;
+      grid-template-columns: repeat(6, 1fr);
       align-items: center;
       text-align: center;
       margin: 0;
@@ -30,11 +29,22 @@ const NavigationStyle = styled.div`
       }
 
       li {
-        flex-basis: auto;
         color: var(--fourthgreen);
         font-size: 16px;
         font-weight: bold;
         letter-spacing: 1.5px;
+      }
+    }
+  }
+
+  // Resposive style
+  @media ${device.laptop1} {
+    .navigation {
+      .nav-items {
+        li {
+          font-size: 14px;
+          letter-spacing: 1px;
+        }
       }
     }
   }
@@ -50,9 +60,6 @@ export default function Navigation() {
     <NavigationStyle>
       <div className="wrapper navigation" data-aos="fade-down">
         <ul className="nav-items">
-          <li className="logo-wrapper">
-            <LogoNameStyle />
-          </li>
           <li>PAR MUMS</li>
           <li>DIVAS MĀJAS</li>
           <li>DARBA LAIKS</li>

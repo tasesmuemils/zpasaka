@@ -23,8 +23,8 @@ const Typography = createGlobalStyle`
   // Responsive design
   @media ${device.laptopL} {
     p,li {
-    font-size: 25px;
-
+    font-size: 22px;
+    line-height: 35px;
   }}
 
 `;

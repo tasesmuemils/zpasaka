@@ -8,13 +8,17 @@ import Element3Svg from "../images/Element_3.svg";
 import styled, { keyframes } from "styled-components";
 import "aos/dist/aos.css";
 import AosConfig from "./AosConfig";
+import { device } from "../styles/mediaQueries";
+
 // CSS
 const WorkHoursStyle = styled.div`
   position: relative;
+  overflow-x: hidden;
   background-color: var(--lightgreen);
   padding: 80px 0;
 
   .work-hours-content {
+    z-index: 3;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 50px 0;
@@ -35,6 +39,7 @@ const WorkHoursStyle = styled.div`
     }
 
     .work-hours-text-2 {
+      overflow-x: hidden;
       padding-left: 50px;
       display: grid;
       justify-items: center;
@@ -44,6 +49,18 @@ const WorkHoursStyle = styled.div`
     position: absolute;
     bottom: 20%;
     left: 0;
+  }
+
+  // Responsive styles
+  @media ${device.laptop1} {
+    padding: 40px 0;
+
+    .work-hours-content {
+      padding: 50px 0;
+    }
+    .svg-wrapper {
+      bottom: 25%;
+    }
   }
 `;
 
@@ -98,9 +115,20 @@ const Element2SvgStyle = styled(Element2Svg)`
   top: 20%;
   left: 67%;
   width: 50px;
+
+  // Responsive style
+  @media ${device.laptop1} {
+    position: absolute;
+    top: 20%;
+    left: 67%;
+    width: 35px;
+  }
 `;
 
 const WorkHoursSvgStyle = styled(WorkHoursSvg)`
+  width: 100%;
+  height: 100%;
+
   #Head {
     animation-name: ${person};
     animation-duration: 1s;
@@ -128,11 +156,27 @@ const WorkHoursSvgStyle = styled(WorkHoursSvg)`
     animation-iteration-count: infinite;
     animation-timing-function: ease-out;
   }
+
+  // Responsive style
+  @media ${device.laptopL} {
+    width: 85%;
+    height: 100%;
+  }
+
+  @media ${device.laptop1} {
+    width: 75%;
+    height: 100%;
+  }
 `;
 
 const Element3SvgStyle = styled(Element3Svg)`
   width: 40px;
   padding: 40px 0;
+
+  @media ${device.laptop1} {
+    width: 35px;
+    padding: 20px 0;
+  }
 `;
 
 export default function WorkHours() {

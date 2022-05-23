@@ -5,8 +5,9 @@ import HeroLogo from "../images/HERO_LOGO.svg";
 import AosConfig from "./AosConfig";
 import Navigation from "./Navigation";
 // Styling
-import styled from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 import "aos/dist/aos.css";
+import { device } from "../styles/mediaQueries";
 
 // CSS
 const HEROStyle = styled.div`
@@ -18,9 +19,6 @@ const HEROStyle = styled.div`
     padding-top: 80px;
     display: flex;
     justify-content: center;
-    svg {
-      height: 30%;
-    }
   }
 
   .hero-text {
@@ -40,6 +38,75 @@ const HEROStyle = styled.div`
       padding-left: 50px;
     }
   }
+
+  // Resposive style
+  @media ${device.laptop1} {
+    .hero-logo {
+      padding-top: 50px;
+    }
+
+    .hero-text {
+      p {
+        margin: 0;
+        color: var(--fourthgreen);
+        padding: 80px 0 100px 0;
+      }
+    }
+  }
+`;
+
+const ApplesId = () => {
+  let ApplesIdArray = [];
+
+  for (let z = 1; z <= 3; z++) {
+    for (let i = 1; i <= 23; i++) {
+      ApplesIdArray.push(`#Apples_${z}_${i} {
+        opacity:0;
+        animation: ${ApplesKeyframe.getName()} 10s 2s infinite ease;
+      }`);
+    }
+  }
+
+  console.log(ApplesIdArray.join(" ").toString());
+  return css`
+    ${ApplesIdArray.join(" ").toString()}
+  `;
+};
+
+const ApplesKeyframe = keyframes`
+  0% { opacity: 0; transform: translateY(0px);}
+  50% { opacity: 1; transform: translateY(0px);}
+  100% { opacity:1; transform: translateY(700px);}
+`;
+
+const BirdKeyframe = keyframes`
+  0% {  opacity: 1; transform: translate3d(0, 0px ,0);}
+  45% {  opacity: 1; transform: translate3d(0, 0px ,0);}
+  50% {  opacity: 1; transform: translate3d(10px, -10px ,0);}
+  55% {  opacity: 1; transform: translate3d(0px, 0px ,0);}
+  70% {  opacity: 1; transform: translate3d(0px, 0px ,0);}
+  100% {  opacity: 1; transform: translate3d(0px, 0px ,0);}
+`;
+
+const HeroLogoStyle = styled(HeroLogo)`
+  #Bird_logo {
+    animation: ${BirdKeyframe} 10s 2s infinite ease;
+  }
+
+  // ApplesId works only then, when I add extra function to one of the
+  ${ApplesId}
+
+  #Apples_3_13 {
+    animation: ${ApplesKeyframe} 10s 2s infinite ease;
+  }
+
+  // END: ApplesId works only then, when I add extra function to one of the apples
+
+  // Resposive style
+  @media ${device.laptop1} {
+    width: 40%;
+    height: 100%;
+  }
 `;
 
 export default function Hero() {
@@ -48,8 +115,8 @@ export default function Hero() {
     <HEROStyle>
       <div className="wrapper">
         <Navigation />
-        <div data-aos="fade-down" className="hero-logo">
-          <HeroLogo />
+        <div className="hero-logo">
+          <HeroLogoStyle />
         </div>
         <div
           data-aos="fade-down"

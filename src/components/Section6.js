@@ -7,9 +7,11 @@ import Element4Svg from "../images/Element_4.svg";
 import styled, { keyframes } from "styled-components";
 import "aos/dist/aos.css";
 import AosConfig from "./AosConfig";
+import { device } from "../styles/mediaQueries";
 
 // CSS
 const Section6Style = styled.div`
+  overflow-x: hidden;
   position: relative;
   background-color: var(--thirdgreen);
   padding: 100px 0;
@@ -20,7 +22,6 @@ const Section6Style = styled.div`
 
     div {
       grid-column-start: 2;
-      /* grid-column-end: 5; */
       p {
         color: var(--white);
       }
@@ -31,6 +32,26 @@ const Section6Style = styled.div`
     position: absolute;
     top: 3%;
     left: 10%;
+  }
+
+  // Responsive style
+  @media ${device.laptopL} {
+    .section6-svg-wrapper {
+      position: absolute;
+      top: 7%;
+      left: 15%;
+    }
+  }
+
+  @media ${device.laptop1} {
+    padding: 50px 0;
+    .section6-content {
+    }
+    .section6-svg-wrapper {
+      position: absolute;
+      top: 7%;
+      left: 15%;
+    }
   }
 `;
 
@@ -66,6 +87,7 @@ const birdEye = keyframes`
 
 const Section6SvgStyle = styled(Section6Svg)`
   width: 90%;
+  height: 100%;
   #Horse_Eye_1,
   #Horse_Eye_2 {
     animation-name: ${horseEyes};
@@ -78,12 +100,22 @@ const Section6SvgStyle = styled(Section6Svg)`
     animation-duration: 4s;
     animation-iteration-count: infinite;
   }
+
+  // Responsive style
+  @media ${device.laptopL} {
+    width: 70%;
+  }
 `;
 
 const Element4SvgStyle = styled(Element4Svg)`
   padding-top: 30px;
   path {
     fill: var(--lightgreen);
+  }
+
+  @media ${device.laptop1} {
+    width: 30px;
+    padding-top: 10px;
   }
 `;
 

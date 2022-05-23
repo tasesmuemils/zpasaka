@@ -6,6 +6,7 @@ import BranchesSvg from "../images/Branches.svg";
 import styled, { keyframes } from "styled-components";
 import "aos/dist/aos.css";
 import AosConfig from "./AosConfig";
+import { device } from "../styles/mediaQueries";
 
 // CSS
 const BranchesStyle = styled.div`
@@ -40,6 +41,22 @@ const BranchesStyle = styled.div`
       }
     }
   }
+
+  // Responsive style
+  @media ${device.laptopL} {
+    .branches-content {
+      padding: 40px 0 80px 0;
+
+      h2 {
+        font-size: 27px;
+      }
+
+      .branches-text {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
 `;
 
 const car = keyframes`
@@ -48,18 +65,10 @@ const car = keyframes`
  100% { transform: translateY(0); }
 `;
 
-// const road = keyframes`
-//   0% { transform: translateX(0); }
-//  30% { transform: translateX(10px); }
-//  50% { transform: translateX(0); }
-//  70% { transform: translateX(-10px); }
-//  100% { transform: translateX(0px); }
-// `;
-
 const BranchesSvgStyle = styled(BranchesSvg)`
-  /* position: absolute; */
   width: 100%;
-  transform: translateY(-55px);
+  height: 100%;
+  transform: translateY(-30px);
 
   #Car_1,
   #Car_light_1,
