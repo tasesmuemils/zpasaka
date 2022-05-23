@@ -25,14 +25,19 @@ const GlobalStyles = createGlobalStyle`
     margin: 0 auto;
     /* display: grid; */
     /* justify-content: center; */
-    
+
     @media ${device.laptopL} {
-      max-width: 960px;
+      max-width: 1160px;
+
+    }
+    
+    @media ${device.laptop1} {
+      max-width: 950px;
 
     }
 
-    @media ${device.laptop} {
-      max-width: 700px;
+    @media ${device.laptop2} {
+      max-width: 767px;
     }
   }
 

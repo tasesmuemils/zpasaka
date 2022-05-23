@@ -11,23 +11,28 @@ import AosConfig from "./AosConfig";
 const FooterStyle = styled.div`
   .footer-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    text-align: center;
-    padding-bottom: 50px;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px;
 
-    p {
-      margin: 0;
-      color: var(--fourthgreen);
-      font-size: 15px;
-      font-weight: bold;
-      letter-spacing: 1.1px;
+    .footer-content {
+      text-align: center;
+      width: 200px;
+      /* justify-self: flex-end; */
+      p {
+        margin: 0;
+        color: var(--fourthgreen);
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 1.1px;
+      }
     }
   }
 `;
 
 const LogoNameStyle = styled(LogoName)`
-  width: 30%;
+  vertical-align: middle;
+  width: 100%;
 `;
 
 export default function Footer() {
@@ -36,9 +41,11 @@ export default function Footer() {
     <FooterStyle>
       <div className="wrapper" data-aos="fade-right">
         <div className="footer-wrapper">
-          <div>
-            <LogoNameStyle />
-            <p>&#169; {new Date().getFullYear()} Zeltābeles pasaka</p>{" "}
+          <div className="footer-content">
+            <div>
+              <LogoNameStyle />
+            </div>
+            {/* <p>&#169; {new Date().getFullYear()} Zeltābeles pasaka</p>{" "} */}
           </div>
         </div>
       </div>

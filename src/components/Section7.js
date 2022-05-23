@@ -7,9 +7,11 @@ import Footer from "./Footer";
 import styled, { keyframes } from "styled-components";
 import "aos/dist/aos.css";
 import AosConfig from "./AosConfig";
+import { device } from "../styles/mediaQueries";
 
 // CSS
 const Section7Style = styled.div`
+  overflow-x: hidden;
   position: relative;
   background-color: var(--red);
   padding-top: 100px;
@@ -22,11 +24,12 @@ const Section7Style = styled.div`
       color: var(--white);
     }
     ul {
-      padding: 0;
+      padding: 10px 0 0 0;
       li {
         list-style: none;
-        padding-top: 15px;
+        padding-top: 0px;
         a {
+          padding: 0;
           text-decoration: none;
           color: var(--white);
           font-weight: bold;
@@ -36,9 +39,26 @@ const Section7Style = styled.div`
   }
 
   .section7-svg-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* width: 20%; */
+    /* height: 100%; */
     position: absolute;
     bottom: 0px;
-    right: 300px;
+    right: 25%;
+  }
+
+  // Responsive style
+  @media ${device.laptopL} {
+    .section7-svg-wrapper {
+      right: 10%;
+    }
+  }
+
+  @media ${device.laptop1} {
+    .section7-svg-wrapper {
+      right: 5%;
+    }
   }
 `;
 
@@ -80,6 +100,17 @@ const Section7SvgStyle = styled(Section7Svg)`
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(0.94, -0.15, 0, 1.07);
+  }
+
+  // Responsive style
+  @media ${device.laptopL} {
+    width: 95%;
+    height: 100%;
+  }
+
+  @media ${device.laptop1} {
+    width: 85%;
+    height: 100%;
   }
 `;
 

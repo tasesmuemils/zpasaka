@@ -1,14 +1,13 @@
 // Main packages
 import React from "react";
 // Components
-import Section21svg from "../images/Section_2_1.svg";
-import Section22svg from "../images/Section_2_2.svg";
 import Section2svg from "../images/Section_2.svg";
 import Element from "../images/Element.svg";
 // Styles
 import styled, { keyframes } from "styled-components";
 import "aos/dist/aos.css";
 import AosConfig from "./AosConfig";
+import { device } from "../styles/mediaQueries";
 
 // CSS
 const Section2Style = styled.div`
@@ -20,7 +19,7 @@ const Section2Style = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
-    padding-bottom: 100px;
+    padding: 50px 0 100px 0;
 
     div {
       color: var(--white);
@@ -35,33 +34,39 @@ const Section2Style = styled.div`
       padding-left: 50px;
     }
   }
+
+  // Resposive style
+  @media ${device.laptop1} {
+    .section-2-text {
+      padding: 40px 0 80px 0;
+    }
+  }
 `;
 
-const rotate = keyframes`
-  0% { transform: rotate(0deg); }
- 100% { transform: rotate(90deg); }
-`;
+// const rotate = keyframes`
+//   0% { transform: rotate(0deg); }
+//  100% { transform: rotate(90deg); }
+// `;
 
-const jumpBall = keyframes`
-  0% { transform: translateY(0) rotate(0deg); }
-  12.5% { transform: translateY(-10) rotate(45deg); }
-  25% { transform: translateY(-20px) rotate(90deg); }
- 50% { transform: translateY(-40px) rotate(180deg); }
- 75% { transform: translateY(0px) rotate(270deg); }
- 100% { transform: translateY(0) rotate(360deg); }
+const bounce = keyframes`
+  from  { transform: translate3d(0, -100px, 0);}
+  to  { transform: translate3d(0, 0px, 0);}
 `;
 
 const Section2svgStyle = styled(Section2svg)`
   width: 100%;
-  transform: translateY(-60px);
+  height: 100%;
+  transform: translateY(-30px);
 
   #Group_3 {
-    transform-box: fill-box;
-    transform-origin: center;
-    animation: ${jumpBall};
-    animation-duration: 2s;
+    animation: ${bounce} 0.5s cubic-bezier(0.5, 0.05, 1, 0.5);
+    animation-direction: alternate;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+  }
+
+  // Resposive style
+  @media ${device.laptop1} {
+    transform: translateY(-30px);
   }
 `;
 
@@ -69,6 +74,12 @@ const ElementStyle = styled(Element)`
   padding-top: 50px;
   path {
     fill: var(--lightgreen);
+  }
+
+  // Resposive style
+  @media ${device.laptopL} {
+    padding-top: 20px;
+    width: 20%;
   }
 `;
 

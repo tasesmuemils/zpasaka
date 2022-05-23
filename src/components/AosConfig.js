@@ -1,5 +1,5 @@
 // Main packages
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 export default function AosConfig() {
   // Animations configuration

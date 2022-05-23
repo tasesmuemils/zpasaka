@@ -6,6 +6,7 @@ import ContactsSvg from "../images/Contacts.svg";
 import styled, { keyframes } from "styled-components";
 import "aos/dist/aos.css";
 import AosConfig from "./AosConfig";
+import { device } from "../styles/mediaQueries";
 
 // CSS
 const ContactsStyle = styled.div`
@@ -29,8 +30,25 @@ const ContactsStyle = styled.div`
 
   .contact-svg-wrapper {
     position: absolute;
-    right: 0;
-    top: 15%;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* width: 80%; */
+    right: 3%;
+    top: 7%;
+  }
+
+  // Responsive style
+  @media ${device.laptopL} {
+    .contact-svg-wrapper {
+      right: 0%;
+      top: 15%;
+    }
+  }
+
+  @media ${device.laptop1} {
+    .contact-svg-wrapper {
+      top: 20%;
+    }
   }
 `;
 
@@ -51,7 +69,8 @@ const rotateShapes2 = keyframes`
 `;
 
 const ContactsSvgStyle = styled(ContactsSvg)`
-  width: 80%;
+  flex-basis: auto;
+  height: 100%;
   #Vector_2,
   #Shape_5 {
     transform-box: fill-box;
@@ -72,6 +91,16 @@ const ContactsSvgStyle = styled(ContactsSvg)`
     /* animation-delay: 1s; */
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+  }
+
+  // Responsive style
+  @media ${device.laptopL} {
+    width: 85%;
+  }
+
+  // Responsive style
+  @media ${device.laptop1} {
+    width: 75%;
   }
 `;
 
