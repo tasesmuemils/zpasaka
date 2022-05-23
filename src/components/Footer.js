@@ -18,7 +18,6 @@ const FooterStyle = styled.div`
     .footer-content {
       text-align: center;
       width: 200px;
-      /* justify-self: flex-end; */
       p {
         margin: 0;
         color: var(--fourthgreen);

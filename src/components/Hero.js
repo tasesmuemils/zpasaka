@@ -115,7 +115,7 @@ export default function Hero() {
     <HEROStyle>
       <div className="wrapper">
         <Navigation />
-        <div className="hero-logo">
+        <div className="hero-logo" data-aos="fade-down">
           <HeroLogoStyle />
         </div>
         <div
