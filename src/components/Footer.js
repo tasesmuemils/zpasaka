@@ -10,6 +10,7 @@ import AosConfig from "./AosConfig";
 // CSS
 const FooterStyle = styled.div`
   .footer-wrapper {
+    opacity: 1;
     display: grid;
     justify-content: flex-end;
     align-items: center;
@@ -38,7 +39,7 @@ export default function Footer() {
   AosConfig();
   return (
     <FooterStyle>
-      <div className="wrapper" data-aos="fade-right">
+      <div className="wrapper">
         <div className="footer-wrapper">
           <div className="footer-content">
             <div>
