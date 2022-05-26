@@ -11,7 +11,6 @@ import { device } from "../styles/mediaQueries";
 
 // CSS
 const Section7Style = styled.div`
-  overflow-x: hidden;
   position: relative;
   background-color: var(--red);
   padding-top: 100px;
@@ -51,15 +50,15 @@ const Section7Style = styled.div`
   // Responsive style
   @media ${device.laptopL} {
     .section7-svg-wrapper {
-      right: 10%;
+      right: 30%;
     }
   }
 
-  @media ${device.laptop1} {
+  /* @media ${device.laptop1} {
     .section7-svg-wrapper {
       right: 5%;
     }
-  }
+  } */
 `;
 
 const rotateShapes = keyframes`
@@ -149,7 +148,7 @@ export default function Section7() {
           </ul>
         </div>
       </div>
-      <div className="section7-svg-wrapper" data-aos="fade-left">
+      <div className="section7-svg-wrapper" data-aos="fade-right">
         <Section7SvgStyle />
       </div>
       <Footer />
