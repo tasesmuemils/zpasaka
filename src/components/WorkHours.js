@@ -13,7 +13,7 @@ import { device } from "../styles/mediaQueries";
 // CSS
 const WorkHoursStyle = styled.div`
   position: relative;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   background-color: var(--lightgreen);
   padding: 80px 0;
 

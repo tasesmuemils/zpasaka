@@ -47,7 +47,7 @@ export default function Footer() {
       <div className="wrapper">
         <div className="footer-wrapper">
           <div className="footer-content">
-            <div data-aos="fade-right" data-aos-offset="10">
+            <div>
               <LogoNameStyle />
             </div>
             {/* <p>&#169; {new Date().getFullYear()} Zeltābeles pasaka</p>{" "} */}
