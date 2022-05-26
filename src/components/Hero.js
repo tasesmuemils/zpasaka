@@ -1,7 +1,9 @@
 // Main packages
-import React from "react";
+import React, { useRef, forwardRef } from "react";
 //Components
 import HeroLogo from "../images/HERO_LOGO.svg";
+import HeroLogoTEST from "../images/HERO_LOGO_test.svg";
+import Apples from "../images/Apples.svg";
 import AosConfig from "./AosConfig";
 import Navigation from "./Navigation";
 // Styling
@@ -67,7 +69,6 @@ const ApplesId = () => {
     }
   }
 
-  console.log(ApplesIdArray.join(" ").toString());
   return css`
     ${ApplesIdArray.join(" ").toString()}
   `;
@@ -76,31 +77,42 @@ const ApplesId = () => {
 const ApplesKeyframe = keyframes`
   0% { opacity: 0; transform: translateY(0px);}
   50% { opacity: 1; transform: translateY(0px);}
-  100% { opacity:1; transform: translateY(700px);}
+  100% { opacity:1; transform: translateY(100%);}
 `;
 
-const BirdKeyframe = keyframes`
+const BirdAppleKeyframe = keyframes`
+  0% { opacity: 0; transform: translateY(0px);}
+  50% { opacity: 1; transform: translateY(0px);}
+  51% { opacity: 0; transform: translateY(0px);}
+  100% { opacity:0; transform: translateY(0px);}
+`;
+
+const BirdHeadKeyframe = keyframes`
   0% {  opacity: 1; transform: translate3d(0, 0px ,0);}
   45% {  opacity: 1; transform: translate3d(0, 0px ,0);}
-  50% {  opacity: 1; transform: translate3d(10px, -10px ,0);}
+  50% {  opacity: 1; transform: translate3d(14px, 0px ,0);}
   55% {  opacity: 1; transform: translate3d(0px, 0px ,0);}
   70% {  opacity: 1; transform: translate3d(0px, 0px ,0);}
   100% {  opacity: 1; transform: translate3d(0px, 0px ,0);}
 `;
 
-const HeroLogoStyle = styled(HeroLogo)`
-  #Bird_logo {
-    animation: ${BirdKeyframe} 10s 2s infinite ease;
+const BirdMouthKeyframe = keyframes`
+  0% {  opacity: 1; transform: translate3d(0, 0px ,0);}
+  49% {  opacity: 1; transform: translate3d(0, 0px ,0);}
+  50% {  opacity: 1; transform: translate3d(0px, -10px ,0);}
+  51% {  opacity: 1; transform: translate3d(0px, 0px ,0);}
+  70% {  opacity: 1; transform: translate3d(0px, 0px ,0);}
+  100% {  opacity: 1; transform: translate3d(0px, 0px ,0);}
+`;
+
+const HeroLogoTESTStyle = styled(HeroLogoTEST)`
+  #Bird_head {
+    animation: ${BirdHeadKeyframe} 10s 2s infinite ease;
   }
 
-  // ApplesId works only then, when I add extra function to one of the
-  ${ApplesId}
-
-  #Apples_3_13 {
-    animation: ${ApplesKeyframe} 10s 2s infinite ease;
+  #Bird_mouth {
+    animation: ${BirdMouthKeyframe} 10s 2s infinite ease;
   }
-
-  // END: ApplesId works only then, when I add extra function to one of the apples
 
   // Resposive style
   @media ${device.laptop1} {
@@ -109,14 +121,51 @@ const HeroLogoStyle = styled(HeroLogo)`
   }
 `;
 
-export default function Hero() {
+const ApplesStyle = styled.div`
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+
+  // Resposive style
+  @media ${device.laptop1} {
+    width: 100%;
+    /* height: 100%; */
+  }
+`;
+
+const ApplesSvgStyle = styled(Apples)`
+  // ApplesId works only then, when I add extra function to one of the
+  ${ApplesId}
+
+  #Apples_3_2 {
+    animation: ${BirdAppleKeyframe} 10s 2s infinite ease;
+  }
+
+  #Apples_3_1 {
+    animation: ${ApplesKeyframe} 10s 2s infinite ease;
+  }
+
+  // END: ApplesId works only then, when I add extra function to one of the apples
+  // Resposive style
+  @media ${device.laptop1} {
+    width: 37.8%;
+    height: 100%;
+  }
+`;
+
+export const Hero = () => {
   AosConfig();
   return (
     <HEROStyle>
       <div className="wrapper">
         <Navigation />
         <div className="hero-logo" data-aos="fade-down">
-          <HeroLogoStyle />
+          <HeroLogoTESTStyle />
+          <ApplesStyle>
+            <ApplesSvgStyle />
+          </ApplesStyle>
         </div>
         <div
           data-aos="fade-down"
@@ -135,4 +184,4 @@ export default function Hero() {
       </div>
     </HEROStyle>
   );
-}
+};

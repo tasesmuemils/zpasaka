@@ -4,13 +4,13 @@ import React from "react";
 import LogoName from "../images/Logo_name.svg";
 // Style
 import styled from "styled-components";
+import { device } from "../styles/mediaQueries";
 import "aos/dist/aos.css";
 import AosConfig from "./AosConfig";
 
 // CSS
 const FooterStyle = styled.div`
   .footer-wrapper {
-    opacity: 1;
     display: grid;
     justify-content: flex-end;
     align-items: center;
@@ -33,6 +33,11 @@ const FooterStyle = styled.div`
 const LogoNameStyle = styled(LogoName)`
   vertical-align: middle;
   width: 100%;
+
+  // Responsive style
+  @media ${device.laptop1} {
+    width: 80%;
+  }
 `;
 
 export default function Footer() {
@@ -40,7 +45,7 @@ export default function Footer() {
   return (
     <FooterStyle>
       <div className="wrapper">
-        <div className="footer-wrapper">
+        <div className="footer-wrapper" data-aos="fade-right">
           <div className="footer-content">
             <div>
               <LogoNameStyle />

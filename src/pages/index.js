@@ -1,6 +1,6 @@
 import * as React from "react";
 // Components
-import Hero from "../components/Hero";
+import { Hero } from "../components/Hero";
 import Section2 from "../components/Section2";
 import Branches from "../components/Branches";
 import WorkHours from "../components/WorkHours";
