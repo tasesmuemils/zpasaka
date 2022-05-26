@@ -77,7 +77,7 @@ const ApplesId = () => {
 const ApplesKeyframe = keyframes`
   0% { opacity: 0; transform: translateY(0px);}
   50% { opacity: 1; transform: translateY(0px);}
-  100% { opacity:1; transform: translateY(100%);}
+  100% { opacity:1; transform: translateY(700px);}
 `;
 
 const BirdAppleKeyframe = keyframes`
@@ -88,21 +88,21 @@ const BirdAppleKeyframe = keyframes`
 `;
 
 const BirdHeadKeyframe = keyframes`
-  0% {  opacity: 1; transform: translate3d(0, 0px ,0);}
-  45% {  opacity: 1; transform: translate3d(0, 0px ,0);}
-  50% {  opacity: 1; transform: translate3d(14px, 0px ,0);}
-  55% {  opacity: 1; transform: translate3d(0px, 0px ,0);}
-  70% {  opacity: 1; transform: translate3d(0px, 0px ,0);}
-  100% {  opacity: 1; transform: translate3d(0px, 0px ,0);}
+  0% {  opacity: 1; transform: translateX(0px);}
+  45% {  opacity: 1; transform: translateX(0px);}
+  50% {  opacity: 1; transform: translateX(14px);}
+  55% {  opacity: 1; transform: translateX(0px);}
+  70% {  opacity: 1; transform: translateX(0px);}
+  100% {  opacity: 1; transform: translateX(0px);}
 `;
 
 const BirdMouthKeyframe = keyframes`
-  0% {  opacity: 1; transform: translate3d(0, 0px ,0);}
-  49% {  opacity: 1; transform: translate3d(0, 0px ,0);}
-  50% {  opacity: 1; transform: translate3d(0px, -10px ,0);}
-  51% {  opacity: 1; transform: translate3d(0px, 0px ,0);}
-  70% {  opacity: 1; transform: translate3d(0px, 0px ,0);}
-  100% {  opacity: 1; transform: translate3d(0px, 0px ,0);}
+  0% {  opacity: 1; transform: translateY(0px);}
+  49% {  opacity: 1; transform: translateY(0px);}
+  50% {  opacity: 1; transform: translateY(-10px);}
+  51% {  opacity: 1; transform: translateY(0px);}
+  70% {  opacity: 1; transform: translateY(0px);}
+  100% {  opacity: 1; transform: translateY(0px);}
 `;
 
 const HeroLogoTESTStyle = styled(HeroLogoTEST)`
