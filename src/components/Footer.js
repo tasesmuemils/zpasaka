@@ -6,6 +6,7 @@ import LogoName from "../images/Logo_name.svg";
 import styled from "styled-components";
 import { device } from "../styles/mediaQueries";
 import "aos/dist/aos.css";
+import AosConfig from "./AosConfig";
 
 // CSS
 const FooterStyle = styled.div`
@@ -16,7 +17,6 @@ const FooterStyle = styled.div`
     padding-bottom: 35px;
 
     .footer-content {
-      opacity: 1;
       text-align: center;
       width: 200px;
       p {
@@ -41,12 +41,13 @@ const LogoNameStyle = styled(LogoName)`
 `;
 
 export default function Footer() {
+  AosConfig();
   return (
     <FooterStyle>
       <div className="wrapper">
         <div className="footer-wrapper">
           <div className="footer-content">
-            <div>
+            <div data-aos="fade-right" data-aos-offset="10">
               <LogoNameStyle />
             </div>
             {/* <p>&#169; {new Date().getFullYear()} Zeltābeles pasaka</p>{" "} */}
