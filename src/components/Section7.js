@@ -151,7 +151,9 @@ export default function Section7() {
       <div className="section7-svg-wrapper" data-aos="fade-right">
         <Section7SvgStyle />
       </div>
-      <Footer />
+      <div data-aos="fade-right">
+        <Footer />
+      </div>
     </Section7Style>
   );
 }
