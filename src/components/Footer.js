@@ -45,7 +45,7 @@ export default function Footer() {
   return (
     <FooterStyle>
       <div className="wrapper">
-        <div className="footer-wrapper" data-aos="fade-right">
+        <div className="footer-wrapper" data-aos="fade-down">
           <div className="footer-content">
             <div>
               <LogoNameStyle />
