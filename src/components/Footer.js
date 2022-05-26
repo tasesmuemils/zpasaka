@@ -46,7 +46,7 @@ export default function Footer() {
     <FooterStyle>
       <div className="wrapper">
         <div className="footer-wrapper">
-          <div className="footer-content">
+          <div className="footer-content" data-aos="fade-down">
             <div>
               <LogoNameStyle />
             </div>
