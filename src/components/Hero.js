@@ -1,5 +1,5 @@
 // Main packages
-import React, { useRef, forwardRef } from "react";
+import React from "react";
 //Components
 import HeroLogo from "../images/HERO_LOGO.svg";
 import HeroLogoTEST from "../images/HERO_LOGO_test.svg";
@@ -55,6 +55,26 @@ const HEROStyle = styled.div`
       }
     }
   }
+
+  @media ${device.tablet} {
+    .hero-text {
+      grid-template-columns: 1fr;
+      padding: 50px 0 80px 0;
+      p {
+        margin: 0;
+        color: var(--fourthgreen);
+        padding: 0px 0 0px 0;
+      }
+
+      p:nth-child(1) {
+        padding-right: 0px;
+      }
+
+      p:nth-child(2) {
+        padding-left: 0px;
+      }
+    }
+  }
 `;
 
 const ApplesId = () => {
@@ -97,12 +117,12 @@ const BirdHeadKeyframe = keyframes`
 `;
 
 const BirdMouthKeyframe = keyframes`
-  0% {  opacity: 1; transform: translateY(0px);}
-  49% {  opacity: 1; transform: translateY(0px);}
-  50% {  opacity: 1; transform: translateY(-10px);}
-  51% {  opacity: 1; transform: translateY(0px);}
-  70% {  opacity: 1; transform: translateY(0px);}
-  100% {  opacity: 1; transform: translateY(0px);}
+  0% {  opacity: 1; transform: translateY(-10px);}
+  49% {  opacity: 1; transform: translateY(-10px);}
+  50% {  opacity: 1; transform: translateY(0px);}
+  51% {  opacity: 1; transform: translateY(-10px);}
+  70% {  opacity: 1; transform: translateY(-10px);}
+  100% {  opacity: 1; transform: translateY(-10px);}
 `;
 
 const HeroLogoTESTStyle = styled(HeroLogoTEST)`
@@ -111,12 +131,18 @@ const HeroLogoTESTStyle = styled(HeroLogoTEST)`
   }
 
   #Bird_mouth {
+    transform: translateY(-10px);
     animation: ${BirdMouthKeyframe} 10s 2s infinite ease;
   }
 
   // Resposive style
   @media ${device.laptop1} {
     width: 40%;
+    height: 100%;
+  }
+
+  @media ${device.tablet} {
+    width: 60%;
     height: 100%;
   }
 `;
@@ -153,14 +179,19 @@ const ApplesSvgStyle = styled(Apples)`
     width: 37.8%;
     height: 100%;
   }
+
+  @media ${device.tablet} {
+    width: 57%;
+    height: 100%;
+  }
 `;
 
 export const Hero = () => {
   AosConfig();
   return (
     <HEROStyle>
+      <Navigation />
       <div className="wrapper">
-        <Navigation />
         <div className="hero-logo" data-aos="fade-down">
           <HeroLogoTESTStyle />
           <ApplesStyle>

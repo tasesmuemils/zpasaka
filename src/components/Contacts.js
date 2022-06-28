@@ -31,7 +31,6 @@ const ContactsStyle = styled.div`
   .contact-svg-wrapper {
     position: absolute;
     display: grid;
-    grid-template-columns: 1fr;
     /* width: 80%; */
     right: 3%;
     top: 7%;
@@ -46,8 +45,53 @@ const ContactsStyle = styled.div`
   }
 
   @media ${device.laptop1} {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
     .contact-svg-wrapper {
-      top: 20%;
+      position: relative;
+      right: 3%;
+      top: auto;
+    }
+  }
+
+  @media ${device.tablet} {
+    grid-template-columns: repeat(1, 1fr);
+
+    .contacts-content {
+      .contacts-content-tablet {
+        padding: 0 200px 0 0;
+        .contacts-text {
+          text-align: left;
+          ul {
+            padding: 10px 0;
+          }
+        }
+      }
+    }
+
+    .contact-svg-wrapper {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr;
+      right: 0%;
+      top: 0%;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+  }
+
+  @media ${device.mobileL} {
+    padding: 60px 0;
+    .contacts-content {
+      .contacts-content-tablet {
+        padding: 0 0px 0 0;
+      }
+    }
+
+    .contact-svg-wrapper {
+      padding: 20px 20px;
     }
   }
 `;
@@ -69,7 +113,6 @@ const rotateShapes2 = keyframes`
 `;
 
 const ContactsSvgStyle = styled(ContactsSvg)`
-  flex-basis: auto;
   height: 100%;
   #Vector_2,
   #Shape_5 {
@@ -77,7 +120,6 @@ const ContactsSvgStyle = styled(ContactsSvg)`
     transform-origin: center;
     animation-name: ${rotateShapes};
     animation-duration: 5s;
-    /* animation-delay: 1s; */
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
   }
@@ -88,7 +130,6 @@ const ContactsSvgStyle = styled(ContactsSvg)`
     transform-origin: center;
     animation-name: ${rotateShapes2};
     animation-duration: 5s;
-    /* animation-delay: 1s; */
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
   }
@@ -98,36 +139,41 @@ const ContactsSvgStyle = styled(ContactsSvg)`
     width: 85%;
   }
 
-  // Responsive style
   @media ${device.laptop1} {
-    width: 75%;
+    width: 100%;
+  }
+
+  @media ${device.tablet} {
+    width: 100%;
   }
 `;
 
 export default function Contacts() {
   AosConfig();
   return (
-    <ContactsStyle>
+    <ContactsStyle id="section5">
       <div className="contacts-content wrapper" data-aos="fade-right">
-        <h2>ZELTĀBELES PASAKA</h2>
-        <div className="contacts-text">
-          <ul>
-            <li>Kaņiera 10a, Rīga. LV-1063,</li>
-            <li>Ķengarags</li>
-            <li>Ilona Marksa, t. 27540005</li>
-            <li>kanieri@zepasaka.lv</li>
-          </ul>
-          <ul>
-            <li>Prūšu 81, Rīga, LV - 1057</li>
-            <li>Ķengarags</li>
-            <li>Viktorija Seļuna, t. 26106724</li>
-            <li>Prusi@zepasaka.lv</li>
-          </ul>
-          <ul>
-            <li>Saimniece Sanita Ozoliņa - Žubule</li>
-            <li>t.26545599</li>
-            <li>Info@zepasaka.lv</li>
-          </ul>
+        <div className="contacts-content-tablet">
+          <h2>ZELTĀBELES PASAKA</h2>
+          <div className="contacts-text">
+            <ul>
+              <li>Kaņiera 10a, Rīga. LV-1063,</li>
+              <li>Ķengarags</li>
+              <li>Ilona Marksa, t. 27540005</li>
+              <li>kanieri@zepasaka.lv</li>
+            </ul>
+            <ul>
+              <li>Prūšu 81, Rīga, LV - 1057</li>
+              <li>Ķengarags</li>
+              <li>Viktorija Seļuna, t. 26106724</li>
+              <li>Prusi@zepasaka.lv</li>
+            </ul>
+            <ul>
+              <li>Saimniece Sanita Ozoliņa - Žubule</li>
+              <li>t.26545599</li>
+              <li>Info@zepasaka.lv</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div

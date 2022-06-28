@@ -28,16 +28,39 @@ const GlobalStyles = createGlobalStyle`
 
     @media ${device.laptopL} {
       max-width: 1160px;
+      /* border: 2px solid yellow; */
 
     }
     
     @media ${device.laptop1} {
-      max-width: 950px;
+      max-width: 930px;
+      /* border: 2px solid red; */
 
     }
 
     @media ${device.laptop2} {
-      max-width: 767px;
+      max-width: 600px;
+      /* border: 2px solid blue; */
+    }
+
+    @media ${device.tablet} {
+      max-width: 480px;
+      /* border: 2px solid purple; */
+    }
+
+    @media ${device.mobileL} {
+      max-width: 320px;
+      /* border: 2px solid purple; */
+    }
+
+    @media ${device.mobileM} {
+      max-width: 250px;
+      /* border: 2px solid purple; */
+    }
+
+    @media ${device.mobileS} {
+      max-width: 200px;
+      /* border: 2px solid purple; */
     }
   }
 

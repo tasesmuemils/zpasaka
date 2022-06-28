@@ -2,6 +2,7 @@
 import React from "react";
 // Components
 import BranchesSvg from "../images/Branches.svg";
+import BranchesMSvg from "../images/Branch_mobile.svg";
 // Styles
 import styled, { keyframes } from "styled-components";
 import "aos/dist/aos.css";
@@ -57,6 +58,40 @@ const BranchesStyle = styled.div`
       }
     }
   }
+
+  @media ${device.tablet} {
+    .branches-content {
+      padding-bottom: 80px;
+
+      h2 {
+        font-size: 23px;
+      }
+
+      .branches-text {
+        display: grid;
+        grid-template-columns: 1fr;
+        div {
+          p {
+            padding-bottom: 0px;
+          }
+        }
+
+        div:nth-child(1) {
+          padding-right: 0px;
+        }
+
+        div:nth-child(2) {
+          padding-left: 0px;
+        }
+      }
+    }
+  }
+
+  @media ${device.mobileL} {
+    .branches-content {
+      padding: 0px 0 80px 0;
+    }
+  }
 `;
 
 const car = keyframes`
@@ -80,14 +115,41 @@ const BranchesSvgStyle = styled(BranchesSvg)`
     animation-timing-function: linear;
     animation-fill-mode: both;
   }
+
+  @media ${device.tablet} {
+    display: none;
+  }
+`;
+
+const BranchesMSvgStyle = styled(BranchesMSvg)`
+  display: none;
+
+  #Car_1,
+  #Car_light_1,
+  #Car_2,
+  #Car_light_2 {
+    animation-name: ${car};
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+  }
+
+  @media ${device.tablet} {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-60px);
+  }
 `;
 
 export default function Branches() {
   AosConfig();
   return (
-    <BranchesStyle>
+    <BranchesStyle id="section3">
       <div data-aos="fade-down">
         <BranchesSvgStyle />
+        <BranchesMSvgStyle />
       </div>
       <div className="branches-content wrapper" data-aos="fade-down">
         <h2>MUMS IR DIVAS MĀJAS</h2>
