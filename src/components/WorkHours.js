@@ -59,7 +59,61 @@ const WorkHoursStyle = styled.div`
       padding: 50px 0;
     }
     .svg-wrapper {
-      bottom: 25%;
+      bottom: 22%;
+    }
+  }
+
+  @media ${device.laptop2} {
+    .svg-wrapper {
+      bottom: 50%;
+    }
+  }
+
+  @media ${device.tablet} {
+    padding: 50px 0 30px 0;
+
+    .work-hours-content {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 0px 0;
+
+      .work-hours-text-1 {
+        padding-right: 0px;
+        padding-bottom: 200px;
+      }
+
+      .work-hours-text-2 {
+        justify-items: end;
+        padding-left: 0px;
+        padding-top: 50px;
+        p {
+          margin: 0;
+        }
+      }
+    }
+    .svg-wrapper {
+      position: absolute;
+      /* top: 15%; */
+      margin: 0px 0;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @media ${device.mobileL} {
+    .work-hours-content {
+      .work-hours-text-2 {
+        padding-top: 0px;
+      }
+    }
+
+    .svg-wrapper {
+      bottom: 60%;
+    }
+  }
+
+  @media ${device.mobileM} {
+    .svg-wrapper {
+      bottom: 66%;
     }
   }
 `;
@@ -118,10 +172,21 @@ const Element2SvgStyle = styled(Element2Svg)`
 
   // Responsive style
   @media ${device.laptop1} {
-    position: absolute;
-    top: 20%;
-    left: 67%;
     width: 35px;
+  }
+
+  @media ${device.laptop1} {
+    top: 13%;
+    left: 80%;
+  }
+
+  @media ${device.tablet} {
+    left: 80%;
+  }
+
+  @media ${device.mobileL} {
+    top: 25%;
+    left: 80%;
   }
 `;
 
@@ -164,7 +229,17 @@ const WorkHoursSvgStyle = styled(WorkHoursSvg)`
   }
 
   @media ${device.laptop1} {
-    width: 75%;
+    width: 73%;
+    height: 100%;
+  }
+
+  @media ${device.laptop2} {
+    width: 50%;
+    height: 100%;
+  }
+
+  @media ${device.tablet} {
+    width: 80%;
     height: 100%;
   }
 `;
@@ -177,12 +252,17 @@ const Element3SvgStyle = styled(Element3Svg)`
     width: 35px;
     padding: 20px 0;
   }
+
+  @media ${device.tablet} {
+    width: 30px;
+    padding: 0px 100px 20px 0px;
+  }
 `;
 
 export default function WorkHours() {
   AosConfig();
   return (
-    <WorkHoursStyle>
+    <WorkHoursStyle id="section4">
       <div className="work-hours-content wrapper">
         <div className="work-hours-text-1" data-aos="fade-right">
           <p>

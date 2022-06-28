@@ -27,6 +27,13 @@ const Typography = createGlobalStyle`
     line-height: 35px;
   }}
 
+  @media ${device.tablet} {
+    p,li {
+    font-size: 20px;
+    line-height: 28px;
+  }}
+
+
 `;
 
 export default Typography;

@@ -11,6 +11,9 @@ import AosConfig from "./AosConfig";
 // CSS
 const FooterStyle = styled.div`
   .footer-wrapper {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
     display: grid;
     justify-content: flex-end;
     align-items: center;
@@ -25,6 +28,33 @@ const FooterStyle = styled.div`
         font-size: 12px;
         font-weight: bold;
         letter-spacing: 1.1px;
+      }
+    }
+  }
+
+  // Responsive style
+  @media ${device.tablet} {
+    .footer-wrapper {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding-bottom: 15px;
+    }
+  }
+
+  @media ${device.mobileL} {
+    .footer-wrapper {
+      padding-bottom: 0px;
+      .footer-content {
+        width: 150px;
+      }
+    }
+  }
+
+  @media ${device.mobileM} {
+    .footer-wrapper {
+      .footer-content {
+        width: 120px;
       }
     }
   }

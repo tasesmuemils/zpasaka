@@ -38,19 +38,55 @@ const Section6Style = styled.div`
   @media ${device.laptopL} {
     .section6-svg-wrapper {
       position: absolute;
-      top: 7%;
+      top: 10%;
       left: 15%;
     }
   }
 
   @media ${device.laptop1} {
-    padding: 50px 0;
-    .section6-content {
-    }
     .section6-svg-wrapper {
       position: absolute;
-      top: 7%;
-      left: 15%;
+      top: 11%;
+      left: 12%;
+    }
+  }
+
+  @media ${device.laptop2} {
+    .section6-svg-wrapper {
+      position: absolute;
+      top: 20%;
+      left: 4%;
+    }
+  }
+
+  @media ${device.tablet} {
+    padding: 80px 0;
+
+    .section6-content {
+      grid-template-columns: 1fr;
+
+      div {
+        grid-column-start: 0;
+      }
+
+      p:nth-child(2) {
+        padding-bottom: 0%;
+      }
+
+      p:nth-child(3) {
+        padding: 40% 0;
+      }
+    }
+
+    .section6-svg-wrapper {
+      position: absolute;
+      width: 100%;
+      height: 60%;
+      /* display: grid; */
+      /* justify-content: center; */
+      top: auto;
+      bottom: 5%;
+      left: 0%;
     }
   }
 `;
@@ -105,6 +141,12 @@ const Section6SvgStyle = styled(Section6Svg)`
   @media ${device.laptopL} {
     width: 70%;
   }
+
+  @media ${device.tablet} {
+    /* position: absolute; */
+    /* bottom: 0; */
+    width: 100%;
+  }
 `;
 
 const Element4SvgStyle = styled(Element4Svg)`
@@ -117,12 +159,16 @@ const Element4SvgStyle = styled(Element4Svg)`
     width: 30px;
     padding-top: 10px;
   }
+
+  @media ${device.tablet} {
+    display: none;
+  }
 `;
 
 export default function Section6() {
   AosConfig();
   return (
-    <Section6Style>
+    <Section6Style id="section6">
       <div className="section6-svg-wrapper" data-aos="fade-right">
         <Section6SvgStyle />
       </div>

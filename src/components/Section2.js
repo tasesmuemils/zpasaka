@@ -2,6 +2,7 @@
 import React from "react";
 // Components
 import Section2svg from "../images/Section_2.svg";
+import Section2Msvg from "../images/Section_2_mobile.svg";
 import Element from "../images/Element.svg";
 // Styles
 import styled, { keyframes } from "styled-components";
@@ -41,12 +42,28 @@ const Section2Style = styled.div`
       padding: 40px 0 80px 0;
     }
   }
-`;
 
-// const rotate = keyframes`
-//   0% { transform: rotate(0deg); }
-//  100% { transform: rotate(90deg); }
-// `;
+  // Resposive style
+  @media ${device.tablet} {
+    .section-2-text {
+      grid-template-columns: 1fr;
+      padding: 0px 0 80px 0;
+
+      div {
+        color: var(--white);
+        padding: 0px 0;
+      }
+
+      div:nth-child(1) {
+        padding-right: 0px;
+      }
+
+      div:nth-child(2) {
+        padding-left: 0px;
+      }
+    }
+  }
+`;
 
 const bounce = keyframes`
   from  { transform: translate3d(0, -100px, 0);}
@@ -68,6 +85,34 @@ const Section2svgStyle = styled(Section2svg)`
   @media ${device.laptop1} {
     transform: translateY(-30px);
   }
+
+  @media ${device.tablet} {
+    display: none;
+  }
+`;
+
+const Section2MsvgStyle = styled(Section2Msvg)`
+  display: none;
+  #Group_3 {
+    animation: ${bounce} 0.5s cubic-bezier(0.5, 0.05, 1, 0.5);
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+
+  // Resposive style
+  @media ${device.laptop1} {
+    transform: translateY(-30px);
+  }
+
+  @media ${device.tablet} {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-30px);
+  }
+
+  @media ${device.mobileL} {
+  }
 `;
 
 const ElementStyle = styled(Element)`
@@ -81,14 +126,19 @@ const ElementStyle = styled(Element)`
     padding-top: 20px;
     width: 20%;
   }
+
+  @media ${device.tablet} {
+    display: none;
+  }
 `;
 
 export default function Section2() {
   AosConfig();
   return (
-    <Section2Style>
+    <Section2Style id="section2">
       <div data-aos="fade-up">
         <Section2svgStyle />
+        <Section2MsvgStyle />
       </div>
       <div data-aos="fade-up" className="section-2-text wrapper">
         <div>

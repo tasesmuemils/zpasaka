@@ -18,7 +18,7 @@ const Section7Style = styled.div`
   .section7-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-bottom: 100px;
+    padding-bottom: 250px;
     p {
       color: var(--white);
     }
@@ -40,8 +40,6 @@ const Section7Style = styled.div`
   .section7-svg-wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    /* width: 20%; */
-    /* height: 100%; */
     position: absolute;
     bottom: 0px;
     right: 25%;
@@ -50,15 +48,28 @@ const Section7Style = styled.div`
   // Responsive style
   @media ${device.laptopL} {
     .section7-svg-wrapper {
-      right: 30%;
+      right: 25%;
     }
   }
 
-  /* @media ${device.laptop1} {
-    .section7-svg-wrapper {
-      right: 5%;
+  @media ${device.tablet} {
+    padding-top: 80px;
+    display: grid;
+    justify-content: center;
+
+    .section7-content {
+      grid-template-columns: 1fr;
+      padding-bottom: 0px;
     }
-  } */
+    .section7-svg-wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+      position: relative;
+      bottom: auto;
+      right: auto;
+      max-width: 500px;
+    }
+  }
 `;
 
 const rotateShapes = keyframes`
@@ -108,7 +119,17 @@ const Section7SvgStyle = styled(Section7Svg)`
   }
 
   @media ${device.laptop1} {
-    width: 85%;
+    width: 80%;
+    height: 100%;
+  }
+
+  @media ${device.tablet} {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media ${device.mobileL} {
+    width: 80%;
     height: 100%;
   }
 `;
@@ -116,7 +137,7 @@ const Section7SvgStyle = styled(Section7Svg)`
 export default function Section7() {
   AosConfig();
   return (
-    <Section7Style>
+    <Section7Style id="section7">
       <div className="section7-content wrapper" data-aos="fade-up">
         <div>
           <p>
