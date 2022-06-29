@@ -12,6 +12,11 @@ import { CgClose } from "@react-icons/all-files/cg/CgClose";
 
 // CSS
 const NavigationStyle = styled.div`
+  background-color: var(--green);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
   .nav-button-open,
   .nav-button-close {
     display: none;
@@ -19,7 +24,7 @@ const NavigationStyle = styled.div`
   .navigation {
     position: relative;
     display: grid;
-    padding-top: 10px;
+    padding: 15px 0;
     .nav-items {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
@@ -73,7 +78,7 @@ const NavigationStyle = styled.div`
   }
 
   @media ${device.tablet} {
-    z-index: 10;
+    /* z-index: 10; */
 
     button {
       cursor: pointer;
@@ -94,8 +99,13 @@ const NavigationStyle = styled.div`
       right: 5%;
       top: 5%;
     }
-    position: absolute;
+    position: fixed;
     width: 100%;
+    height: 50px;
+
+    .wrapper {
+      max-width: 100%;
+    }
     .navigation {
       display: grid;
       align-items: center;
@@ -147,7 +157,7 @@ export default function Navigation() {
         <GiHamburgerMenu />
       </button>
 
-      <div className={`${navbarOpen ? " check" : ""} navigation`}>
+      <div className={`${navbarOpen ? " check" : ""} navigation wrapper`}>
         <button
           class={`${navbarOpen ? "nav-button-close" : "hide"}`}
           onClick={handleToggle}
@@ -162,7 +172,7 @@ export default function Navigation() {
               to="section2"
               spy={true}
               smooth={true}
-              offset={-40}
+              offset={-105}
               duration={500}
             >
               PAR MUMS
@@ -175,7 +185,7 @@ export default function Navigation() {
               to="section3"
               spy={true}
               smooth={true}
-              offset={-40}
+              offset={-110}
               duration={500}
             >
               DIVAS MĀJAS
@@ -188,7 +198,7 @@ export default function Navigation() {
               to="section4"
               spy={true}
               smooth={true}
-              offset={40}
+              offset={0}
               duration={500}
             >
               DARBA LAIKS
@@ -201,7 +211,7 @@ export default function Navigation() {
               to="section5"
               spy={true}
               smooth={true}
-              offset={40}
+              offset={-30}
               duration={500}
             >
               KONTAKTI
@@ -214,7 +224,7 @@ export default function Navigation() {
               to="section6"
               spy={true}
               smooth={true}
-              offset={40}
+              offset={-40}
               duration={500}
             >
               VĒRTĪBAS

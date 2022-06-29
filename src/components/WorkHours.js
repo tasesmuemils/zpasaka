@@ -116,6 +116,18 @@ const WorkHoursStyle = styled.div`
       bottom: 66%;
     }
   }
+
+  @media ${device.mobileS} {
+    .work-hours-content {
+      .work-hours-text-1 {
+        padding-bottom: 150px;
+      }
+    }
+
+    .svg-wrapper {
+      bottom: 70%;
+    }
+  }
 `;
 
 const person = keyframes`
@@ -225,22 +237,26 @@ const WorkHoursSvgStyle = styled(WorkHoursSvg)`
   // Responsive style
   @media ${device.laptopL} {
     width: 85%;
-    height: 100%;
   }
 
   @media ${device.laptop1} {
     width: 73%;
-    height: 100%;
   }
 
   @media ${device.laptop2} {
     width: 50%;
-    height: 100%;
   }
 
   @media ${device.tablet} {
-    width: 80%;
-    height: 100%;
+    width: 70%;
+  }
+
+  @media ${device.mobileL} {
+    width: 90%;
+  }
+
+  @media ${device.mobileS} {
+    width: 100%;
   }
 `;
 
