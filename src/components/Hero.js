@@ -18,7 +18,7 @@ const HEROStyle = styled.div`
   justify-content: center;
 
   .hero-logo {
-    padding-top: 80px;
+    padding-top: 110px;
     display: flex;
     justify-content: center;
   }
@@ -44,7 +44,7 @@ const HEROStyle = styled.div`
   // Resposive style
   @media ${device.laptop1} {
     .hero-logo {
-      padding-top: 50px;
+      padding-top: 80px;
     }
 
     .hero-text {
@@ -57,6 +57,10 @@ const HEROStyle = styled.div`
   }
 
   @media ${device.tablet} {
+    .hero-logo {
+      padding-top: 60px;
+    }
+
     .hero-text {
       grid-template-columns: 1fr;
       padding: 50px 0 80px 0;
@@ -137,12 +141,22 @@ const HeroLogoTESTStyle = styled(HeroLogoTEST)`
 
   // Resposive style
   @media ${device.laptop1} {
-    width: 40%;
+    width: 50%;
+    height: 100%;
+  }
+
+  @media ${device.laptop2} {
+    width: 60%;
     height: 100%;
   }
 
   @media ${device.tablet} {
-    width: 60%;
+    width: 80%;
+    height: 100%;
+  }
+
+  @media ${device.mobileL} {
+    width: 80%;
     height: 100%;
   }
 `;
