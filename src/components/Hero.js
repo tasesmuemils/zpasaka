@@ -206,14 +206,15 @@ export const Hero = () => {
     <HEROStyle>
       <Navigation />
       <div className="wrapper">
-        <div className="hero-logo" data-aos="fade-down">
+        {/*data-aos="fade-down"*/}
+        <div className="hero-logo">
           <HeroLogoTESTStyle />
           <ApplesStyle>
             <ApplesSvgStyle />
           </ApplesStyle>
         </div>
         <div
-          data-aos="fade-down"
+          // data-aos="fade-down"
           data-aos-duration="2000"
           className="hero-text"
         >
