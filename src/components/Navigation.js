@@ -151,6 +151,7 @@ export default function Navigation() {
   return (
     <NavigationStyle>
       <button
+        aria-label="Open Navigation"
         class={`${navbarOpen ? "hide" : "nav-button-open"}`}
         onClick={handleToggle}
       >
