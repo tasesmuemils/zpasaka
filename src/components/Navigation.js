@@ -122,7 +122,7 @@ const NavigationStyle = styled.div`
     }
 
     .check {
-      overflow-y: hidden;
+      overflow: hidden;
       position: fixed;
       background-color: var(--green);
       width: 100%;
