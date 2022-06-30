@@ -1,10 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `zpasaka.lv`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Zeltābeles pasaka`,
+    siteUrl: `https://www.zpasaka.lv`,
+    description: `Bērnudārzs "Zeltābeles pasaka"`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-react-svg`,
       options: {
