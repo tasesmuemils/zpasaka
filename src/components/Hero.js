@@ -1,7 +1,7 @@
 // Main packages
 import React from "react";
 //Components
-import HeroLogo from "../images/HERO_LOGO.svg";
+// import HeroLogo from "../images/HERO_LOGO.svg";
 import HeroLogoTEST from "../images/HERO_LOGO_test.svg";
 import Apples from "../images/Apples.svg";
 import AosConfig from "./AosConfig";

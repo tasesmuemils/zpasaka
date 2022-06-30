@@ -146,25 +146,67 @@ export default function Section7() {
           </p>
           <ul>
             <li>
-              <a href="">Disks</a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://www.youtube.com/watch?v=b2rJt8YsCbY"
+              >
+                Disks
+              </a>
             </li>
             <li>
-              <a href="">Vislabākā latviešu dziesmu izlase</a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://www.youtube.com/watch?v=b2rJt8YsCbY"
+              >
+                Vislabākā latviešu dziesmu izlase
+              </a>
             </li>
             <li>
-              <a href="">Video „Še tev dālders”</a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://www.youtube.com/watch?v=b2rJt8YsCbY"
+              >
+                Video „Še tev dālders”
+              </a>
             </li>
             <li>
-              <a href="">Animācija</a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://www.youtube.com/watch?v=b2rJt8YsCbY"
+              >
+                Animācija
+              </a>
             </li>
             <li>
-              <a href="">Kas te, es te</a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://www.youtube.com/watch?v=b2rJt8YsCbY"
+              >
+                Kas te, es te
+              </a>
             </li>
             <li>
-              <a href="">Martas video</a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://www.youtube.com/watch?v=b2rJt8YsCbY"
+              >
+                Martas video
+              </a>
             </li>
             <li>
-              <a href="">Rīta ziņas</a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://www.youtube.com/watch?v=b2rJt8YsCbY"
+              >
+                Rīta ziņas
+              </a>
             </li>
           </ul>
         </div>
