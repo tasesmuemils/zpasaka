@@ -27,12 +27,17 @@ const Section7Style = styled.div`
       li {
         list-style: none;
         padding-top: 0px;
+        transform: translateY(0px);
         a {
           padding: 0;
           text-decoration: none;
           color: var(--white);
           font-weight: bold;
         }
+      }
+      li:hover {
+        transform: translateY(-3px);
+        transition: all 0.3s ease-in-out;
       }
     }
   }
