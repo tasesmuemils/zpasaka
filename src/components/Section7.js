@@ -149,7 +149,7 @@ export default function Section7() {
               <a
                 rel="noreferrer"
                 target="_blank"
-                href="https://www.youtube.com/watch?v=b2rJt8YsCbY"
+                href="https://www.youtube.com/channel/UCyrPpiDtk1zg4M1ZsJrK1SA"
               >
                 Disks
               </a>
@@ -158,7 +158,7 @@ export default function Section7() {
               <a
                 rel="noreferrer"
                 target="_blank"
-                href="https://www.youtube.com/watch?v=b2rJt8YsCbY"
+                href="https://www.youtube.com/watch?v=k2DpcvO8RLI"
               >
                 Vislabākā latviešu dziesmu izlase
               </a>
@@ -176,12 +176,12 @@ export default function Section7() {
               <a
                 rel="noreferrer"
                 target="_blank"
-                href="https://www.youtube.com/watch?v=b2rJt8YsCbY"
+                href="https://www.youtube.com/watch?v=OQXN1QlqrJY"
               >
                 Animācija
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 rel="noreferrer"
                 target="_blank"
@@ -198,12 +198,12 @@ export default function Section7() {
               >
                 Martas video
               </a>
-            </li>
+            </li> */}
             <li>
               <a
                 rel="noreferrer"
                 target="_blank"
-                href="https://www.youtube.com/watch?v=b2rJt8YsCbY"
+                href="https://replay.lsm.lv/lv/ieraksts/ltv/113692/bernu-muzikas-albums-zeltabele"
               >
                 Rīta ziņas
               </a>

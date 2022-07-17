@@ -190,12 +190,32 @@ const ApplesSvgStyle = styled(Apples)`
   // END: ApplesId works only then, when I add extra function to one of the apples
   // Resposive style
   @media ${device.laptop1} {
-    width: 37.8%;
+    width: 440px;
+    height: 100%;
+  }
+
+  @media ${device.laptop1} {
+    width: 340px;
     height: 100%;
   }
 
   @media ${device.tablet} {
-    width: 57%;
+    width: 360px;
+    height: 100%;
+  }
+
+  @media ${device.mobileL} {
+    width: 240px;
+    height: 100%;
+  }
+
+  @media ${device.mobileM} {
+    width: 190px;
+    height: 100%;
+  }
+
+  @media ${device.mobileS} {
+    width: 150px;
     height: 100%;
   }
 `;
