@@ -26,10 +26,10 @@ const Section7Style = styled.div`
       padding: 10px 0 0 0;
       li {
         list-style: none;
-        padding-top: 0px;
+        padding-top: 5px;
         transform: translateY(0px);
         a {
-          padding: 0;
+          padding: 5px 0;
           text-decoration: none;
           color: var(--white);
           font-weight: bold;
