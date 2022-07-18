@@ -16,6 +16,7 @@ const Section7Style = styled.div`
   padding-top: 100px;
 
   .section7-content {
+    z-index: 4;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-bottom: 250px;

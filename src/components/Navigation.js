@@ -152,7 +152,7 @@ export default function Navigation() {
     <NavigationStyle>
       <button
         aria-label="Open Navigation"
-        class={`${navbarOpen ? "hide" : "nav-button-open"}`}
+        className={`${navbarOpen ? "hide" : "nav-button-open"}`}
         onClick={handleToggle}
       >
         <GiHamburgerMenu />
@@ -160,7 +160,7 @@ export default function Navigation() {
 
       <div className={`${navbarOpen ? " check" : ""} navigation wrapper`}>
         <button
-          class={`${navbarOpen ? "nav-button-close" : "hide"}`}
+          className={`${navbarOpen ? "nav-button-close" : "hide"}`}
           onClick={handleToggle}
         >
           <CgClose />
