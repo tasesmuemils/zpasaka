@@ -110,8 +110,8 @@ const NavigationStyle = styled.div`
       display: grid;
       align-items: center;
       .nav-items {
-        visibility: hidden;
-        display: flex;
+        display: none;
+        /* display: flex; */
         flex-direction: column;
         li {
           padding: 10px 0;
@@ -127,11 +127,10 @@ const NavigationStyle = styled.div`
       background-color: var(--green);
       width: 100%;
       height: 100%;
-      z-index: 2;
 
       .showMenu {
         /* border: 1px solid red; */
-        visibility: visible;
+        display: block;
         background-color: var(--green);
       }
     }

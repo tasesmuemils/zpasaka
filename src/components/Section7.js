@@ -16,10 +16,10 @@ const Section7Style = styled.div`
   padding-top: 100px;
 
   .section7-content {
-    z-index: 4;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-bottom: 250px;
+    /* z-index: 5; */
     p {
       color: var(--white);
     }
@@ -179,14 +179,15 @@ export default function Section7() {
                 Video „Še tev dālders”
               </a>
             </li>
-
-            <a
-              rel="noreferrer"
-              target="_blank"
-              href="https://www.youtube.com/watch?v=OQXN1QlqrJY"
-            >
-              <li>Animācija</li>
-            </a>
+            <li>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://www.youtube.com/watch?v=OQXN1QlqrJY"
+              >
+                Animācija
+              </a>
+            </li>
 
             {/* <li>
               <a
@@ -207,13 +208,15 @@ export default function Section7() {
               </a>
             </li> */}
 
-            <a
-              rel="noreferrer"
-              target="_blank"
-              href="https://replay.lsm.lv/lv/ieraksts/ltv/113692/bernu-muzikas-albums-zeltabele"
-            >
-              <li>Rīta ziņas</li>
-            </a>
+            <li>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://replay.lsm.lv/lv/ieraksts/ltv/113692/bernu-muzikas-albums-zeltabele"
+              >
+                Rīta ziņas
+              </a>
+            </li>
           </ul>
         </div>
       </div>
