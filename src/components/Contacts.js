@@ -159,13 +159,13 @@ export default function Contacts() {
             <ul>
               <li>Kaņiera 10a, Rīga. LV-1063,</li>
               <li>Ķengarags</li>
-              <li>Ilona Marksa, t. 27540005</li>
+              <li>Ilona Francuzeviča, t. 27540005</li>
               <li>kanieri@zepasaka.lv</li>
             </ul>
             <ul>
               <li>Prūšu 81, Rīga, LV - 1057</li>
               <li>Ķengarags</li>
-              <li>Viktorija Seļuna, t. 26106724</li>
+              <li>Diāna Samsonova, t. 25561034</li>
               <li>Prusi@zepasaka.lv</li>
             </ul>
             <ul>
