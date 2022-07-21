@@ -8,6 +8,8 @@ import styled, { keyframes } from "styled-components";
 import "aos/dist/aos.css";
 import AosConfig from "./AosConfig";
 import { device } from "../styles/mediaQueries";
+import { FaFacebookSquare } from "@react-icons/all-files/fa/FaFacebookSquare";
+import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram";
 
 // CSS
 const Section7Style = styled.div`
@@ -20,6 +22,10 @@ const Section7Style = styled.div`
     grid-template-columns: 1fr 1fr;
     padding-bottom: 250px;
     /* z-index: 5; */
+
+    .contact-intro {
+      font-weight: bold;
+    }
     p {
       color: var(--white);
     }
@@ -27,15 +33,21 @@ const Section7Style = styled.div`
       padding: 10px 0 0 0;
       li {
         list-style: none;
-        padding-top: 5px;
-        transform: translateY(0px);
-        font-weight: bold;
-      }
-      a {
-        padding: 5px 0;
-        text-decoration: none;
         color: var(--white);
-        font-weight: bold;
+        /* padding-top: 5px; */
+        /* transform: translateY(0px); */
+        /* font-weight: bold; */
+      }
+    }
+    .social-icons {
+      display: flex;
+      li {
+        padding: 0 10px;
+        font-size: 40px;
+        a {
+          text-decoration: none;
+          color: var(--white);
+        }
       }
       li:hover {
         transform: translateY(-3px);
@@ -67,6 +79,12 @@ const Section7Style = styled.div`
     .section7-content {
       grid-template-columns: 1fr;
       padding-bottom: 0px;
+
+      .social-icons {
+        li {
+          font-size: 30px;
+        }
+      }
     }
     .section7-svg-wrapper {
       display: grid;
@@ -75,6 +93,26 @@ const Section7Style = styled.div`
       bottom: auto;
       right: auto;
       max-width: 500px;
+    }
+  }
+
+  @media ${device.mobileM} {
+    .section7-content {
+      .small-email {
+        padding-top: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        /* letter-spacing: 1px; */
+        /* word-break: normal; */
+      }
+    }
+  }
+
+  @media ${device.mobileS} {
+    .section7-content {
+      .small-email {
+        font-size: 12px;
+      }
     }
   }
 `;
@@ -145,76 +183,44 @@ export default function Section7() {
   AosConfig();
   return (
     <Section7Style id="section7">
+      {/*  */}
       <div className="section7-content wrapper" data-aos="fade-up">
         <div>
-          <p>
-            Kopš 2013. gada esam piedzīvojuši daudz burvīgu mirkļu. Jo mums ir
-            lieliski draugi un sadarbības partneri.
-          </p>
+          <p className="contact-intro">ZELTĀBELES PASAKA</p>
           <ul>
+            <li>Kaņiera 10a, Rīga. LV-1063,</li>
+            <li>Ķengarags</li>
+            <li>Ilona Francuzeviča, t. 27540005</li>
+            <li className="small-email">kanieri@zepasaka.lv</li>
+          </ul>
+          <ul>
+            <li>Prūšu 81, Rīga, LV - 1057</li>
+            <li>Ķengarags</li>
+            <li>Diāna Samsonova, t. 25561034</li>
+            <li className="small-email">prusi@zepasaka.lv</li>
+          </ul>
+          <ul>
+            <li>Saimniece Sanita Ozoliņa - Žubule</li>
+            <li>t.26545599</li>
+            <li className="small-email">sanita.ozolina.zubule@gmail.com</li>
+          </ul>
+          <ul className="social-icons">
             <li>
               <a
                 rel="noreferrer"
                 target="_blank"
-                href="https://www.youtube.com/channel/UCyrPpiDtk1zg4M1ZsJrK1SA"
+                href="https://www.facebook.com/Zeltabelespasaka.Kanieri/"
               >
-                Disks
+                <FaFacebookSquare />
               </a>
             </li>
             <li>
               <a
                 rel="noreferrer"
                 target="_blank"
-                href="https://www.youtube.com/watch?v=k2DpcvO8RLI"
+                href="https://www.instagram.com/zeltabelespasaka/"
               >
-                Vislabākā latviešu dziesmu izlase
-              </a>
-            </li>
-            <li>
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://www.youtube.com/watch?v=b2rJt8YsCbY"
-              >
-                Video „Še tev dālders”
-              </a>
-            </li>
-            <li>
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://www.youtube.com/watch?v=OQXN1QlqrJY"
-              >
-                Animācija
-              </a>
-            </li>
-
-            {/* <li>
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://www.youtube.com/watch?v=b2rJt8YsCbY"
-              >
-                Kas te, es te
-              </a>
-            </li>
-            <li>
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://www.youtube.com/watch?v=b2rJt8YsCbY"
-              >
-                Martas video
-              </a>
-            </li> */}
-
-            <li>
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://replay.lsm.lv/lv/ieraksts/ltv/113692/bernu-muzikas-albums-zeltabele"
-              >
-                Rīta ziņas
+                <FaInstagram />
               </a>
             </li>
           </ul>

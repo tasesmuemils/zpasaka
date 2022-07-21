@@ -13,6 +13,7 @@ import { CgClose } from "@react-icons/all-files/cg/CgClose";
 // CSS
 const NavigationStyle = styled.div`
   background-color: var(--green);
+  top: 0;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -78,7 +79,9 @@ const NavigationStyle = styled.div`
   }
 
   @media ${device.tablet} {
-    /* z-index: 10; */
+    position: fixed;
+    width: 100%;
+    height: 50px;
 
     button {
       cursor: pointer;
@@ -99,9 +102,6 @@ const NavigationStyle = styled.div`
       right: 5%;
       top: 5%;
     }
-    position: fixed;
-    width: 100%;
-    height: 50px;
 
     .wrapper {
       max-width: 100%;
@@ -134,6 +134,10 @@ const NavigationStyle = styled.div`
         background-color: var(--green);
       }
     }
+  }
+
+  @media ${device.mobileS} {
+    /* width: 70%; */
   }
 `;
 
@@ -214,7 +218,7 @@ export default function Navigation() {
               offset={-30}
               duration={500}
             >
-              KONTAKTI
+              DRAUGI
             </Link>
           </li>
           <li>
@@ -240,7 +244,7 @@ export default function Navigation() {
               offset={40}
               duration={500}
             >
-              DRAUGI
+              KONTAKTI
             </Link>
           </li>
         </ul>
