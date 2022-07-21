@@ -13,13 +13,16 @@ import { device } from "../styles/mediaQueries";
 
 // CSS
 const HEROStyle = styled.div`
+  position: relative;
   background-color: var(--green);
   display: grid;
   justify-content: center;
 
   .hero-logo {
-    padding-top: 110px;
+    /* position: relative; */
+    height: 100vh;
     display: flex;
+    align-items: center;
     justify-content: center;
   }
 
@@ -44,7 +47,7 @@ const HEROStyle = styled.div`
   // Resposive style
   @media ${device.laptop1} {
     .hero-logo {
-      padding-top: 80px;
+      padding-top: 0px;
     }
 
     .hero-text {
@@ -58,7 +61,7 @@ const HEROStyle = styled.div`
 
   @media ${device.tablet} {
     .hero-logo {
-      padding-top: 60px;
+      padding-top: 0px;
     }
 
     .hero-text {
@@ -130,6 +133,7 @@ const BirdMouthKeyframe = keyframes`
 `;
 
 const HeroLogoTESTStyle = styled(HeroLogoTEST)`
+  /* width: 40%; */
   #Bird_head {
     animation: ${BirdHeadKeyframe} 10s 2s infinite ease;
   }
@@ -140,13 +144,27 @@ const HeroLogoTESTStyle = styled(HeroLogoTEST)`
   }
 
   // Resposive style
+  @media ${device.laptopL} {
+    /* border: 1px solid red; */
+    /* padding: 50px; */
+    width: 60%;
+    /* height: 100%; */
+  }
+
+  @media ${device.laptopM} {
+    /* border: 1px solid yellow; */
+    width: 30%;
+    /* height: 100%; */
+  }
+
   @media ${device.laptop1} {
-    width: 50%;
+    /* border: 1px solid red; */
+    width: 35%;
     height: 100%;
   }
 
   @media ${device.laptop2} {
-    width: 60%;
+    width: 50%;
     height: 100%;
   }
 
@@ -159,23 +177,45 @@ const HeroLogoTESTStyle = styled(HeroLogoTEST)`
     width: 80%;
     height: 100%;
   }
+
+  @media ${device.mobileM} {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 const ApplesStyle = styled.div`
   margin: 0;
   padding: 0;
+  margin-bottom: 120px;
   position: absolute;
   display: flex;
-  justify-content: center;
 
   // Resposive style
+  @media ${device.laptopL} {
+    margin-bottom: 105px;
+  }
+
   @media ${device.laptop1} {
-    width: 100%;
-    /* height: 100%; */
+    margin-bottom: 100px;
+  }
+
+  @media ${device.laptop2} {
+    margin-bottom: 90px;
+  }
+
+  @media ${device.mobileL} {
+    margin-bottom: 75px;
+  }
+
+  @media ${device.mobileS} {
+    margin-bottom: 60px;
   }
 `;
 
 const ApplesSvgStyle = styled(Apples)`
+  width: 390px;
+  height: 100%;
   // ApplesId works only then, when I add extra function to one of the
   ${ApplesId}
 
@@ -189,13 +229,19 @@ const ApplesSvgStyle = styled(Apples)`
 
   // END: ApplesId works only then, when I add extra function to one of the apples
   // Resposive style
-  @media ${device.laptop1} {
-    width: 440px;
+
+  @media ${device.laptopL} {
+    width: 330px;
     height: 100%;
   }
 
   @media ${device.laptop1} {
-    width: 340px;
+    width: 310px;
+    height: 100%;
+  }
+
+  @media ${device.laptop2} {
+    width: 280px;
     height: 100%;
   }
 
@@ -210,12 +256,12 @@ const ApplesSvgStyle = styled(Apples)`
   }
 
   @media ${device.mobileM} {
-    width: 190px;
+    width: 240px;
     height: 100%;
   }
 
   @media ${device.mobileS} {
-    width: 150px;
+    width: 190px;
     height: 100%;
   }
 `;

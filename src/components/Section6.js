@@ -181,9 +181,9 @@ export default function Section6() {
             klusumu. Baudām mirkli un atbalstām zaļo domāšanu.
           </p>
           <p>
-            <span>Koncepcija:</span> Mūsu darba viducītī ir bērniņš, kuram mēs
-            palīdzam augt par drošu, zinātkāru, pašapzinīgu un atbildīgu
-            personību. Cienām sevi un citus. Mācāmies spēlējoties.
+            Mūsu darba viducītī ir bērniņš, kuram mēs palīdzam augt par drošu,
+            zinātkāru, pašapzinīgu un atbildīgu personību. Cienām sevi un citus.
+            Mācāmies spēlējoties.
           </p>
           <p>
             <span>Vērtības:</span> mēs nemērām un nesveram. Un nenosakām provi.

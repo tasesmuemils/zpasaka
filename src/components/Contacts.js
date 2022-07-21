@@ -13,7 +13,7 @@ const ContactsStyle = styled.div`
   position: relative;
   background-color: var(--green);
   /* display: flex; */
-  padding: 100px 0;
+  padding: 100px 0 400px;
 
   .contacts-content {
     /* flex-basis: auto; */
@@ -23,6 +23,19 @@ const ContactsStyle = styled.div`
         padding: 20px 0;
         li {
           list-style: none;
+          padding-top: 5px;
+          transform: translateY(0px);
+          font-weight: bold;
+          a {
+            padding: 5px 0;
+            text-decoration: none;
+            color: var(--white);
+            font-weight: bold;
+          }
+        }
+        li:hover {
+          transform: translateY(-3px);
+          transition: all 0.3s ease-in-out;
         }
       }
     }
@@ -38,6 +51,7 @@ const ContactsStyle = styled.div`
 
   // Responsive style
   @media ${device.laptopL} {
+    padding: 100px 0 250px;
     .contact-svg-wrapper {
       right: 0%;
       top: 15%;
@@ -45,8 +59,14 @@ const ContactsStyle = styled.div`
   }
 
   @media ${device.laptop1} {
+    padding: 100px 0 150px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+    .contacts-content {
+      padding-left: 20px;
+      padding-bottom: 20px;
+    }
 
     .contact-svg-wrapper {
       position: relative;
@@ -56,6 +76,7 @@ const ContactsStyle = styled.div`
   }
 
   @media ${device.tablet} {
+    padding: 80px 0;
     grid-template-columns: repeat(1, 1fr);
 
     .contacts-content {
@@ -154,24 +175,78 @@ export default function Contacts() {
     <ContactsStyle id="section5">
       <div className="contacts-content wrapper" data-aos="fade-right">
         <div className="contacts-content-tablet">
-          <h2>ZELTĀBELES PASAKA</h2>
+          <p>
+            Kopš 2013. gada esam piedzīvojuši daudz burvīgu mirkļu.
+            <br />
+            Jo mums ir lieliski draugi un sadarbības partneri.
+          </p>
           <div className="contacts-text">
             <ul>
-              <li>Kaņiera 10a, Rīga. LV-1063,</li>
-              <li>Ķengarags</li>
-              <li>Ilona Francuzeviča, t. 27540005</li>
-              <li>kanieri@zepasaka.lv</li>
-            </ul>
-            <ul>
-              <li>Prūšu 81, Rīga, LV - 1057</li>
-              <li>Ķengarags</li>
-              <li>Diāna Samsonova, t. 25561034</li>
-              <li>Prusi@zepasaka.lv</li>
-            </ul>
-            <ul>
-              <li>Saimniece Sanita Ozoliņa - Žubule</li>
-              <li>t.26545599</li>
-              <li>Info@zepasaka.lv</li>
+              <li>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://www.youtube.com/channel/UCyrPpiDtk1zg4M1ZsJrK1SA"
+                >
+                  Disks
+                </a>
+              </li>
+              <li>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://www.youtube.com/watch?v=k2DpcvO8RLI"
+                >
+                  Vislabākā latviešu dziesmu izlase
+                </a>
+              </li>
+              <li>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://www.youtube.com/watch?v=b2rJt8YsCbY"
+                >
+                  Video „Še tev dālders”
+                </a>
+              </li>
+              <li>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://www.youtube.com/watch?v=OQXN1QlqrJY"
+                >
+                  Animācija
+                </a>
+              </li>
+
+              {/* <li>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://www.youtube.com/watch?v=b2rJt8YsCbY"
+              >
+                Kas te, es te
+              </a>
+            </li>
+            <li>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://www.youtube.com/watch?v=b2rJt8YsCbY"
+              >
+                Martas video
+              </a>
+            </li> */}
+
+              <li>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://replay.lsm.lv/lv/ieraksts/ltv/113692/bernu-muzikas-albums-zeltabele"
+                >
+                  Rīta ziņas
+                </a>
+              </li>
             </ul>
           </div>
         </div>

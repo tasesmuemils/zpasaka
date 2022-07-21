@@ -156,7 +156,7 @@ export default function Branches() {
         <div className="branches-text">
           <div>
             <p>
-              <span>Kaņieru iela 10a</span>, saimniece Ilona Marksa, t.27540005,
+              <span>Kaņieru iela 10a</span>, Ilona Francuzeviča, t.27540005,
               kanieri@zepasaka.lv
             </p>
             <p>
@@ -168,8 +168,8 @@ export default function Branches() {
           </div>
           <div>
             <p>
-              <span>Prūšu iela 81</span>, saimniece Viktorija Seļuna,
-              t.26106724, prusi@zepasaka.lv
+              <span>Prūšu iela 81</span>, Diāna Samsonova, t.25561034,
+              prusi@zepasaka.lv
             </p>
             <p>
               Kopš 2021. gada pārņemtas bijušā dārziņa Apelsīnu pasaka telpas.
