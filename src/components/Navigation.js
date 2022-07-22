@@ -42,11 +42,14 @@ const NavigationStyle = styled.div`
       }
 
       li {
-        cursor: pointer;
         color: var(--fourthgreen);
         font-size: 16px;
         font-weight: bold;
         letter-spacing: 1.5px;
+
+        a {
+          cursor: pointer;
+        }
       }
     }
   }
