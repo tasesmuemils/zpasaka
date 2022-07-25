@@ -221,7 +221,7 @@ export default function Navigation() {
               offset={-30}
               duration={500}
             >
-              DRAUGI
+              DARĪŠANAS
             </Link>
           </li>
           <li>
