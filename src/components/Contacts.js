@@ -12,20 +12,20 @@ import { device } from "../styles/mediaQueries";
 const ContactsStyle = styled.div`
   position: relative;
   background-color: var(--green);
-  /* display: flex; */
-  padding: 100px 0 400px;
+  padding: 100px 0;
 
   .contacts-content {
-    /* flex-basis: auto; */
     color: var(--white);
     .contacts-text {
       ul {
         padding: 20px 0;
+        width: 45%;
         li {
           list-style: none;
           padding-top: 5px;
           transform: translateY(0px);
           font-weight: bold;
+          padding: 30px 0;
           a {
             padding: 5px 0;
             text-decoration: none;
@@ -33,9 +33,18 @@ const ContactsStyle = styled.div`
             font-weight: bold;
           }
         }
-        li:hover {
+        .link-wrapper {
+          width: fit-content;
+          padding-bottom: 10px;
+        }
+        .link-wrapper:hover {
           transform: translateY(-3px);
           transition: all 0.3s ease-in-out;
+        }
+        .link-description {
+          p {
+            margin: 0;
+          }
         }
       }
     }
@@ -46,15 +55,15 @@ const ContactsStyle = styled.div`
     display: grid;
     /* width: 80%; */
     right: 3%;
-    top: 7%;
+    top: 30%;
   }
 
   // Responsive style
   @media ${device.laptopL} {
-    padding: 100px 0 250px;
+    padding: 100px 0 100px;
     .contact-svg-wrapper {
       right: 0%;
-      top: 15%;
+      top: 30%;
     }
   }
 
@@ -66,6 +75,11 @@ const ContactsStyle = styled.div`
     .contacts-content {
       padding-left: 20px;
       padding-bottom: 20px;
+      .contacts-text {
+        ul {
+          width: 80%;
+        }
+      }
     }
 
     .contact-svg-wrapper {
@@ -81,10 +95,11 @@ const ContactsStyle = styled.div`
 
     .contacts-content {
       .contacts-content-tablet {
-        padding: 0 200px 0 0;
+        padding: 0 0px 0 0;
         .contacts-text {
           text-align: left;
           ul {
+            width: auto;
             padding: 10px 0;
           }
         }
@@ -183,69 +198,118 @@ export default function Contacts() {
           <div className="contacts-text">
             <ul>
               <li>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  href="https://www.youtube.com/channel/UCyrPpiDtk1zg4M1ZsJrK1SA"
-                >
-                  Disks
-                </a>
+                <div className="link-wrapper">
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.youtube.com/channel/UCyrPpiDtk1zg4M1ZsJrK1SA"
+                  >
+                    Disks
+                  </a>
+                </div>
+                <div className="link-description">
+                  <p>
+                    2018. gadā, satikāmies ar komponistu Jāni Ķirsi un nolēmām
+                    ierakstīt mūzikas albumu. Visu gribējām darīt paši. No
+                    savas, bērnu un vecāku bērnības savācām skaitāmpantiņus,
+                    kuriem Jānis sakomponēja mūziku. Mācījāmies dziesmas,
+                    braucām uz studiju - pirmo reizi mūžā. Kopā ar mums ar lielu
+                    prieku dziedāja Rūta Dūduma, Raimonds Bramanis, Eremijs
+                    Sējāns. Un tapa lieliskas 14 dziesmas ar instrumentālajiem
+                    pavadījumiem. Tajā pašā gadā kļuvām par mūzikas ierakstu
+                    gada balvas Zelta Mikrofons laureātiem.{" "}
+                  </p>
+                </div>
               </li>
               <li>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  href="https://www.youtube.com/watch?v=k2DpcvO8RLI"
-                >
-                  Vislabākā latviešu dziesmu izlase
-                </a>
+                <div className="link-wrapper">
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.youtube.com/watch?v=k2DpcvO8RLI"
+                  >
+                    Vislabākā latviešu dziesmu izlase
+                  </a>
+                </div>
+
+                <div className="link-description">
+                  <p>
+                    Ar savām dziesmām iekļuvām Vislabāko latviešu dziesmu
+                    izlasē.
+                  </p>
+                </div>
               </li>
               <li>
+                <div className="link-wrapper">
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.youtube.com/watch?v=b2rJt8YsCbY"
+                  >
+                    Video „Še tev dālders”
+                  </a>
+                </div>
+                <div className="link-description">
+                  <p>
+                    Pašiem dziedāšana un darbošanās patika tik ļoti, ka dziesmai
+                    "Še tev dālders" tapa video.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div className="link-wrapper">
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.youtube.com/watch?v=OQXN1QlqrJY"
+                  >
+                    Animācija
+                  </a>
+                </div>
+                <div className="link-description">
+                  <p>
+                    Pateicoties atbalstam no ZAB Glimstedt un partneri,
+                    mākslinieks Krišs Salmanis palīdzēja mums izveidot animāciju
+                    dziesmai "Jājam, jājam mēs ar zirgu".
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div className="link-wrapper">
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/1455396878058055/posts/1795233450741061/"
+                  >
+                    Kas te, es te
+                  </a>
+                </div>
+                <div className="link-description">
+                  <p>Piedalījāmies raidījumā "Kas te, es te".</p>
+                </div>
+              </li>
+              {/* <li>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   href="https://www.youtube.com/watch?v=b2rJt8YsCbY"
                 >
-                  Video „Še tev dālders”
+                  Martas video
                 </a>
-              </li>
+              </li> */}
               <li>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  href="https://www.youtube.com/watch?v=OQXN1QlqrJY"
-                >
-                  Animācija
-                </a>
-              </li>
-
-              {/* <li>
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://www.youtube.com/watch?v=b2rJt8YsCbY"
-              >
-                Kas te, es te
-              </a>
-            </li>
-            <li>
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://www.youtube.com/watch?v=b2rJt8YsCbY"
-              >
-                Martas video
-              </a>
-            </li> */}
-
-              <li>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  href="https://replay.lsm.lv/lv/ieraksts/ltv/113692/bernu-muzikas-albums-zeltabele"
-                >
-                  Rīta ziņas
-                </a>
+                <div className="link-wrapper">
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://replay.lsm.lv/lv/ieraksts/ltv/113692/bernu-muzikas-albums-zeltabele"
+                  >
+                    Rīta ziņas
+                  </a>
+                </div>
+                <div className="link-description">
+                  <p>Mūsu dziedāšanas prieks izskanēja arī televīzijā</p>
+                </div>
               </li>
             </ul>
           </div>
