@@ -19,8 +19,7 @@ const HEROStyle = styled.div`
   justify-content: center;
 
   .hero-logo {
-    /* position: relative; */
-    height: 100vh;
+    height: 99.5vh;
     display: flex;
     align-items: center;
     justify-content: center;
