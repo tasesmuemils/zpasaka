@@ -46,6 +46,13 @@ const ContactsStyle = styled.div`
             margin: 0;
           }
         }
+        .author-tag {
+          p {
+            margin: 0;
+            font-size: 15px;
+            letter-spacing: 0.8px;
+          }
+        }
       }
     }
   }
@@ -288,15 +295,6 @@ export default function Contacts() {
                   <p>Piedalījāmies raidījumā "Kas te, es te".</p>
                 </div>
               </li>
-              {/* <li>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  href="https://www.youtube.com/watch?v=b2rJt8YsCbY"
-                >
-                  Martas video
-                </a>
-              </li> */}
               <li>
                 <div className="link-wrapper">
                   <a
@@ -309,6 +307,45 @@ export default function Contacts() {
                 </div>
                 <div className="link-description">
                   <p>Mūsu dziedāšanas prieks izskanēja arī televīzijā</p>
+                </div>
+              </li>
+              <li>
+                <div className="link-wrapper">
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://fb.watch/ew49J8uNVl/"
+                  >
+                    Ziemassvētku darbiņi
+                  </a>
+                </div>
+                <div className="link-description">
+                  <p>
+                    Jau divus gadus piedalāmies Ziemassvetku sajūtas radīšanā
+                    SAC "Siltais"
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div className="link-wrapper">
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://youtube.com/playlist?list=PLHkg1svGWUiE7hq4TMYi8xWQBsvwZ9fnk"
+                  >
+                    Animācijas
+                  </a>
+                </div>
+                <div className="link-description">
+                  <p>
+                    Kopā ar mākslinieci Daci Liepu esam piedalījušies dažādu
+                    animāciju veidošanā
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div className="author-tag">
+                  <p>Mājaslapu taisīja un aprūpē Emīls Bisenieks</p>
                 </div>
               </li>
             </ul>
