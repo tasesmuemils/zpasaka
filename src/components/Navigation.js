@@ -1,6 +1,6 @@
 // Main packages
 import React, { useState } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 // Style
 import styled from "styled-components";

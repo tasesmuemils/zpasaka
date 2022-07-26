@@ -90,7 +90,7 @@ const ApplesId = () => {
   for (let z = 1; z <= 3; z++) {
     for (let i = 1; i <= 23; i++) {
       ApplesIdArray.push(`#Apples_${z}_${i} {
-        opacity:0;
+        opacity:0.01;
         animation: ${ApplesKeyframe.getName()} 10s 2s infinite ease;
       }`);
     }
@@ -102,16 +102,16 @@ const ApplesId = () => {
 };
 
 const ApplesKeyframe = keyframes`
-  0% { opacity: 0; transform: translateY(0px);}
+  0% { opacity: 0.01; transform: translateY(0px);}
   50% { opacity: 1; transform: translateY(0px);}
   100% { opacity:1; transform: translateY(700px);}
 `;
 
 const BirdAppleKeyframe = keyframes`
-  0% { opacity: 0; transform: translateY(0px);}
+  0% { opacity: 0.01; transform: translateY(0px);}
   50% { opacity: 1; transform: translateY(0px);}
-  51% { opacity: 0; transform: translateY(0px);}
-  100% { opacity:0; transform: translateY(0px);}
+  51% { opacity: 0.01; transform: translateY(0px);}
+  100% { opacity:0.01; transform: translateY(0px);}
 `;
 
 const BirdHeadKeyframe = keyframes`
