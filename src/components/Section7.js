@@ -210,6 +210,7 @@ export default function Section7() {
                 rel="noreferrer"
                 target="_blank"
                 href="https://www.facebook.com/Zeltabelespasaka.Kanieri/"
+                aria-label="Facebook"
               >
                 <FaFacebookSquare />
               </a>
@@ -219,6 +220,7 @@ export default function Section7() {
                 rel="noreferrer"
                 target="_blank"
                 href="https://www.instagram.com/zeltabelespasaka/"
+                aria-label="Instagram"
               >
                 <FaInstagram />
               </a>
