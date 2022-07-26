@@ -204,6 +204,10 @@ const ApplesStyle = styled.div`
     margin-bottom: 90px;
   }
 
+  @media ${device.tablet} {
+    margin-bottom: 110px;
+  }
+
   @media ${device.mobileL} {
     margin-bottom: 75px;
   }
